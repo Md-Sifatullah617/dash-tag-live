@@ -114,5 +114,7 @@ class AppRoutes {
     GetPage(name: girlsjackets, page: () => ProductShowcasePage()),
     GetPage(name: girlspoloshirts, page: () => ProductShowcasePage()),
     GetPage(name: girlshoodies, page: () => ProductShowcasePage()),
+    GetPage(name: girlshortscargo, page: () => ProductShowcasePage()),
+    GetPage(name: girlssweaters, page: () => ProductShowcasePage()),
   ];
 }

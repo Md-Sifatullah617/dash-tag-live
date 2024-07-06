@@ -41,25 +41,30 @@ class OurProductSectionTablet extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Expanded(
-                child: Column(
-                  children: [
-                    Text('Mens',
-                        style: GoogleFonts.rajdhani().copyWith(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
-                          color: Colors.redAccent,
-                        )),
-                    const SizedBox(height: 20),
-                    Card(
-                      elevation: 5,
-                      child: Container(
-                        width: 200,
+              Card(
+                elevation: 10,
+                child: Expanded(
+                  child: Column(
+                    children: [
+                      Text('Mens',
+                          style: GoogleFonts.rajdhani().copyWith(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.redAccent,
+                          )),
+                      const SizedBox(height: 20),
+                      Container(
+                        width: 166,
                         height: 250,
                         padding: const EdgeInsets.all(5),
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
-                          border: Border.all(color: Colors.black),
+                          border: Border(
+                              top: BorderSide(
+                                width: 2,
+                                color: Colors.black,
+                              )
+                          ),
                         ),
                         child: CarouselSlider(
                             items: AllListsManager.mensJeansList
@@ -79,29 +84,34 @@ class OurProductSectionTablet extends StatelessWidget {
                               scrollDirection: Axis.horizontal,
                             )),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-              Expanded(
-                child: Column(
-                  children: [
-                    Text('Womens',
-                        style: GoogleFonts.rajdhani().copyWith(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
-                          color: Colors.redAccent,
-                        )),
-                    const SizedBox(height: 20),
-                    Card(
-                      elevation: 5,
-                      child: Container(
-                        width: 200,
+              Card(
+                elevation: 10,
+                child: Expanded(
+                  child: Column(
+                    children: [
+                      Text('Womens',
+                          style: GoogleFonts.rajdhani().copyWith(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.redAccent,
+                          )),
+                      const SizedBox(height: 20),
+                      Container(
+                        width: 166,
                         height: 250,
                         padding: const EdgeInsets.all(5),
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
-                          border: Border.all(color: Colors.black),
+                          border: Border(
+                              top: BorderSide(
+                                width: 2,
+                                color: Colors.black,
+                              )
+                          ),
                         ),
                         child: CarouselSlider(
                             items: AllListsManager.womensClothList
@@ -121,29 +131,34 @@ class OurProductSectionTablet extends StatelessWidget {
                               scrollDirection: Axis.horizontal,
                             )),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-              Expanded(
-                child: Column(
-                  children: [
-                    Text('Kids',
-                        style: GoogleFonts.rajdhani().copyWith(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
-                          color: Colors.redAccent,
-                        )),
-                    const SizedBox(height: 20),
-                    Card(
-                      elevation: 5,
-                      child: Container(
+              Card(
+                elevation: 10,
+                child: Expanded(
+                  child: Column(
+                    children: [
+                      Text('Kids',
+                          style: GoogleFonts.rajdhani().copyWith(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.redAccent,
+                          )),
+                      const SizedBox(height: 20),
+                      Container(
                         padding: const EdgeInsets.all(5),
-                        width: 200,
+                        width: 166,
                         height: 250,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
-                          border: Border.all(color: Colors.black),
+                          border: Border(
+                              top: BorderSide(
+                                width: 2,
+                                color: Colors.black,
+                              )
+                          ),
                         ),
                         child: CarouselSlider(
                             items: AllListsManager.kidsClothList
@@ -163,10 +178,10 @@ class OurProductSectionTablet extends StatelessWidget {
                               scrollDirection: Axis.horizontal,
                             )),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              )
+              ),
             ],
           ),
         ],

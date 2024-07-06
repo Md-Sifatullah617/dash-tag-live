@@ -51,7 +51,7 @@ class HomePageMobile extends StatelessWidget {
           height: 5.sh,
         ),
         GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             childAspectRatio: 0.75,
           ),

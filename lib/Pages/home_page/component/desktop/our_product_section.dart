@@ -16,7 +16,7 @@ class OurProductsSection extends StatelessWidget {
         context: context,
         mobile: 80.sh,
         tablet: 50.sh,
-        desktop: 700,
+        desktop: 750,
       ),
       // padding: const EdgeInsets.symmetric(vertical: 20),
       margin: const EdgeInsets.symmetric(horizontal: 20),
@@ -33,120 +33,144 @@ class OurProductsSection extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Expanded(
-                child: Column(
-                  children: [
-                    Text('Mens',
-                        style: GoogleFonts.rajdhani().copyWith(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
-                          color: Colors.redAccent,
-                        )),
-                    const SizedBox(height: 20),
-                    Container(
-                      width: 350,
-                      height: 500,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        border: Border.all(color: Colors.black),
-                      ),
-                      child: CarouselSlider(
-                          items: AllListsManager.mensJeansList
-                              .map((e) => Image.asset(e, fit: BoxFit.cover))
-                              .toList(),
-                          options: CarouselOptions(
-                            aspectRatio: 16 / 9,
-                            viewportFraction: 1,
-                            enableInfiniteScroll: true,
-                            reverse: false,
-                            autoPlay: true,
-                            autoPlayInterval: const Duration(seconds: 3),
-                            autoPlayAnimationDuration:
-                                const Duration(milliseconds: 800),
-                            autoPlayCurve: Curves.fastOutSlowIn,
-                            enlargeCenterPage: true,
-                            scrollDirection: Axis.horizontal,
+              Card(
+                elevation: 10,
+                child: Expanded(
+                  child: Column(
+                    children: [
+                      Text('Mens',
+                          style: GoogleFonts.rajdhani().copyWith(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.redAccent,
                           )),
-                    ),
-                  ],
+                      const SizedBox(height: 10),
+                      Container(
+                        width: 270,
+                        height: 500,
+                        decoration: const BoxDecoration(
+                          color: Colors.white,
+                          border: Border(
+                            top: BorderSide(
+                              width: 2,
+                              color: Colors.black,
+                            )
+                          ),
+                        ),
+                        child: CarouselSlider(
+                            items: AllListsManager.mensJeansList
+                                .map((e) => Image.asset(e, fit: BoxFit.cover))
+                                .toList(),
+                            options: CarouselOptions(
+                              aspectRatio: 16 / 9,
+                              viewportFraction: 1,
+                              enableInfiniteScroll: true,
+                              reverse: false,
+                              autoPlay: true,
+                              autoPlayInterval: const Duration(seconds: 3),
+                              autoPlayAnimationDuration:
+                                  const Duration(milliseconds: 800),
+                              autoPlayCurve: Curves.fastOutSlowIn,
+                              enlargeCenterPage: true,
+                              scrollDirection: Axis.horizontal,
+                            )),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Expanded(
-                child: Column(
-                  children: [
-                    Text('Womens',
-                        style: GoogleFonts.rajdhani().copyWith(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
-                          color: Colors.redAccent,
-                        )),
-                    const SizedBox(height: 20),
-                    Container(
-                      width: 350,
-                      height: 500,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        border: Border.all(color: Colors.black),
-                      ),
-                      child: CarouselSlider(
-                          items: AllListsManager.womensClothList
-                              .map((e) => Image.asset(e, fit: BoxFit.cover))
-                              .toList(),
-                          options: CarouselOptions(
-                            aspectRatio: 16 / 9,
-                            viewportFraction: 1,
-                            enableInfiniteScroll: true,
-                            reverse: false,
-                            autoPlay: true,
-                            autoPlayInterval: const Duration(seconds: 3),
-                            autoPlayAnimationDuration:
-                                const Duration(milliseconds: 800),
-                            autoPlayCurve: Curves.fastOutSlowIn,
-                            enlargeCenterPage: true,
-                            scrollDirection: Axis.horizontal,
+              Card(
+                elevation: 10,
+                child: Expanded(
+                  child: Column(
+                    children: [
+                      Text('Womens',
+                          style: GoogleFonts.rajdhani().copyWith(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.redAccent,
                           )),
-                    ),
-                  ],
+                      const SizedBox(height: 10),
+                      Container(
+                        width: 270,
+                        height: 500,
+                        decoration: const BoxDecoration(
+                          color: Colors.white,
+                          border: Border(
+                              top: BorderSide(
+                                width: 2,
+                                color: Colors.black,
+                              )
+                          ),
+                        ),
+                        child: CarouselSlider(
+                            items: AllListsManager.womensClothList
+                                .map((e) => Image.asset(e, fit: BoxFit.cover))
+                                .toList(),
+                            options: CarouselOptions(
+                              aspectRatio: 16 / 9,
+                              viewportFraction: 1,
+                              enableInfiniteScroll: true,
+                              reverse: false,
+                              autoPlay: true,
+                              autoPlayInterval: const Duration(seconds: 3),
+                              autoPlayAnimationDuration:
+                                  const Duration(milliseconds: 800),
+                              autoPlayCurve: Curves.fastOutSlowIn,
+                              enlargeCenterPage: true,
+                              scrollDirection: Axis.horizontal,
+                            )),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Expanded(
-                child: Column(
-                  children: [
-                    Text('Kids',
-                        style: GoogleFonts.rajdhani().copyWith(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
-                          color: Colors.redAccent,
-                        )),
-                    const SizedBox(height: 20),
-                    Container(
-                      width: 350,
-                      height: 500,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        border: Border.all(color: Colors.black),
-                      ),
-                      child: CarouselSlider(
-                          items: AllListsManager.kidsClothList
-                              .map((e) => Image.asset(e, fit: BoxFit.cover))
-                              .toList(),
-                          options: CarouselOptions(
-                            aspectRatio: 16 / 9,
-                            viewportFraction: 1,
-                            enableInfiniteScroll: true,
-                            reverse: false,
-                            autoPlay: true,
-                            autoPlayInterval: const Duration(seconds: 3),
-                            autoPlayAnimationDuration:
-                                const Duration(milliseconds: 800),
-                            autoPlayCurve: Curves.fastOutSlowIn,
-                            enlargeCenterPage: true,
-                            scrollDirection: Axis.horizontal,
+              Card(
+                elevation: 10,
+                child: Expanded(
+                  child: Column(
+                    children: [
+                      Text('Kids',
+                          style: GoogleFonts.rajdhani().copyWith(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.redAccent,
                           )),
-                    ),
-                  ],
+                      const SizedBox(height: 10),
+                      Container(
+                        width: 270,
+                        height: 500,
+                        decoration: const BoxDecoration(
+                          color: Colors.white,
+                          border: Border(
+                              top: BorderSide(
+                                width: 2,
+                                color: Colors.black,
+                              )
+                          ),
+                        ),
+                        child: CarouselSlider(
+                            items: AllListsManager.kidsClothList
+                                .map((e) => Image.asset(e, fit: BoxFit.cover))
+                                .toList(),
+                            options: CarouselOptions(
+                              aspectRatio: 16 / 9,
+                              viewportFraction: 1,
+                              enableInfiniteScroll: true,
+                              reverse: false,
+                              autoPlay: true,
+                              autoPlayInterval: const Duration(seconds: 3),
+                              autoPlayAnimationDuration:
+                                  const Duration(milliseconds: 800),
+                              autoPlayCurve: Curves.fastOutSlowIn,
+                              enlargeCenterPage: true,
+                              scrollDirection: Axis.horizontal,
+                            )),
+                      ),
+                    ],
+                  ),
                 ),
-              )
+              ),
             ],
           ),
         ],

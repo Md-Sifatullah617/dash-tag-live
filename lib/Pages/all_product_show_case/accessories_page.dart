@@ -73,14 +73,16 @@ class ProductShowcasePage extends StatelessWidget {
         return "Girl's T-Shirts";
       case AppRoutes.girlsshirtspants:
         return "Girl's Shirts";
+      case AppRoutes.girlshortscargo:
+        return "Girl's Shorts & Cargo";
       case AppRoutes.girlshoodies:
         return "Girl's Hoodies";
       case AppRoutes.girlsjeans:
         return "Girl's Jeans";
       case AppRoutes.girlspoloshirts:
         return "Girl's Polo Shirts";
-      case AppRoutes.girlsjackets:
-        return "Girl's Jackets";
+      case AppRoutes.girlssweaters:
+        return "Girl's Sweaters";
 
       default:
         return "Products";
@@ -93,8 +95,6 @@ class ProductShowcasePage extends StatelessWidget {
     switch (currentRoute) {
       case AppRoutes.accessoeies:
         return AllListsManager.accessoriesList;
-      case AppRoutes.leatherproduct:
-        return AllListsManager.leatherProductList;
       case AppRoutes.menshoodies:
         return AllListsManager.mensHoodiesList;
       case AppRoutes.menstshirts:
@@ -143,10 +143,14 @@ class ProductShowcasePage extends StatelessWidget {
         return AllListsManager.girlsTshirtsList;
       case AppRoutes.girlspoloshirts:
         return AllListsManager.girlsPoloShirtsList;
+      case AppRoutes.girlshortscargo:
+        return AllListsManager.girlsShortsAndCargoList;
       case AppRoutes.girlsshirtspants:
         return AllListsManager.girlsShirtsAndPantsList;
       case AppRoutes.girlsjeans:
         return AllListsManager.girlJensList;
+      case AppRoutes.girlssweaters:
+        return AllListsManager.girlsSweatersList;
       case AppRoutes.girlshoodies:
         return AllListsManager.girlsHoodiesList;
       default:
