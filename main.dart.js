@@ -45644,14 +45644,14 @@ $S:82}
 A.uJ.prototype={
 E(a){var s,r,q,p=null,o=this.c
 A.asD()
-s=$.aFk().lj("images/profile_pdf/mypdf.pdf",p)
+s=$.aFk().lj("assets/images/means_jeans/mypdf.pdf",p)
 r=$.aD()
 q=new A.aS(new Float64Array(16))
 q.dk()
 return A.eg(B.fU,A.az(A.a([new A.dB(o,p),A.bQ(new A.Ay(new A.MM(new A.bT(B.uY,r),s,q,r),p),1)],t.p),B.m,B.k,B.h),new A.kQ(o,p),A.az7(A.ld(B.GI,p,p),!1,new A.acU()))}}
 A.acU.prototype={
 $0(){var s=document.createElement("a")
-s.href="images/profile_pdf/mypdf.pdf"
+s.href="assets/images/means_jeans/mypdf.pdf"
 s.setAttribute("download","mypdf.pdf")
 s.click()},
 $S:0}

@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "5ec91d03a94ec213cedcf7843f9aa23a",
-"assets/AssetManifest.bin.json": "0af15d61bf474fad154a844575abbc6c",
-"assets/AssetManifest.json": "8fc116cab361c208a73bc99da110f4ca",
+const RESOURCES = {"assets/AssetManifest.bin": "99b2b582717d911433a0f6404ec8fbd0",
+"assets/AssetManifest.bin.json": "6d588d10dd7800da226c95e3e8ae8f61",
+"assets/AssetManifest.json": "bed15714c8f4c4eafe97bfeca7a8ba7a",
 "assets/assets/images/about_d_t/about%2520D&T.png": "6b2f63911e7838a7d3476f7eb474f7d7",
 "assets/assets/images/about_d_t/about%2520D&T1.png": "0e5b475a35a6ccf456b1b8b4328df6ec",
 "assets/assets/images/about_d_t/D&T_logo.png": "08597feeef702e7cff84c165bbaff5ea",
@@ -63,6 +63,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "5ec91d03a94ec213cedcf7843f9aa23a
 "assets/assets/images/means_jeans/c6.png": "b94082d013b4b73a0ce8e0810493a197",
 "assets/assets/images/means_jeans/c7.webp": "9310526db6578231235671e0ab8d880d",
 "assets/assets/images/means_jeans/c8.jpg": "462294a0fd2bec30cdc7492fead11617",
+"assets/assets/images/means_jeans/mypdf.pdf": "8a7626f0f7c47314318d8151573e4b2c",
 "assets/assets/images/means_jeans/Picture1.png": "f6dc07ba50eb5d54ef5771dc96c7b8b0",
 "assets/assets/images/means_jeans/Picture10.png": "8e96c3e716019546d0ce5ad628c6811f",
 "assets/assets/images/means_jeans/Picture11.png": "40ffc465b3fcf353bfd5a37bb7290ccb",
@@ -1542,7 +1543,6 @@ const RESOURCES = {"assets/AssetManifest.bin": "5ec91d03a94ec213cedcf7843f9aa23a
 "assets/assets/images/products/Women/T-Shirts/7.png": "d7894b1ab9d6a0bbeb449a3d79cf6fbf",
 "assets/assets/images/products/Women/T-Shirts/8.png": "3f1d8393c56f250cd56bb1f87162ed48",
 "assets/assets/images/products/Women/T-Shirts/9.png": "30030952fc6a8562ef195ff06763fee3",
-"assets/assets/images/profile_pdf/mypdf.pdf": "8a7626f0f7c47314318d8151573e4b2c",
 "assets/assets/images/services/brandmanagement.jpg": "de9d410373880f9cbe676080fad36058",
 "assets/assets/images/services/designing.jpg": "4a15c6d8c2f9da93b2ff90cae38d5edd",
 "assets/assets/images/services/logistics.png": "6d41ccecb5b7b82a04f08cccd807101c",
@@ -1581,14 +1581,14 @@ const RESOURCES = {"assets/AssetManifest.bin": "5ec91d03a94ec213cedcf7843f9aa23a
 "canvaskit/skwasm.worker.js": "bfb704a6c714a75da9ef320991e88b03",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "flutter.js": "383e55f7f3cce5be08fcf1f3881f585c",
-"flutter_bootstrap.js": "645a3f187a7c42e9cffb4df2b3af617e",
+"flutter_bootstrap.js": "6f88c6570e4878739d497e0d786db122",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "index.html": "3c0bd33f7fe2ce347e0e549f36db4538",
 "/": "3c0bd33f7fe2ce347e0e549f36db4538",
-"main.dart.js": "5eb69f056ff7645d9b4a7da67cec9b9c",
+"main.dart.js": "db2948854b05d3e2dd9fdeeeeca4d6e1",
 "manifest.json": "7cc92a3eb689157fff6216e96fbba6e9",
 "version.json": "93c265047baebf0d0ee3706a0c1d1275"};
 // The application shell files that are downloaded before a service worker can
