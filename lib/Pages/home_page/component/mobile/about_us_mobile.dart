@@ -102,7 +102,7 @@ class AboutUsMobile extends StatelessWidget {
           //   ),
           // )
 
-          AutoSizeText(
+          const AutoSizeText(
             HomePageText.aboutUsDescription,
             textAlign: TextAlign.start,
             minFontSize: 18,

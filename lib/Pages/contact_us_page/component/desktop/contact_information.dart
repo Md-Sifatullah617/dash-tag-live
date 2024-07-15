@@ -4,7 +4,6 @@ import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Texts/Contact_Us_Page_Text/contact_us_page_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class ContactInformation extends StatelessWidget {
   const ContactInformation({super.key});

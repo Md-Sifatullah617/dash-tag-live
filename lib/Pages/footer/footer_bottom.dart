@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import '../home_page/component/desktop/widgets/footer_bottom_social_buttons.dart';
 import 'footer_bottom_licence.dart';
 
 class FooterBottom extends StatelessWidget {
   const FooterBottom({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -7,7 +7,6 @@ import '../../../../Utils/All_Texts/Mission_Vission_Text/mission_vission_text.da
 import '../../../../controller/main_controller.dart';
 import '../../../footer/footer.dart';
 import '../../../home_page/component/desktop/our_complience_section.dart';
-import '../../component/desktop/mission_vission_image_and_description.dart';
 import '../../component/desktop/product_page_header_image.dart';
 import '../../component/tablet/mission_vission_iamage_description_tablet.dart';
 
@@ -16,14 +15,12 @@ class MissionVissionTablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     final MainController controller = Get.find();
 
     return Scaffold(
       backgroundColor: ColorManager.webBackgroundColor,
       body: ListView(
         children: [
-
           CustomAppbar(controller: controller),
 
           // Mission Vission Header Image
@@ -48,7 +45,7 @@ class MissionVissionTablet extends StatelessWidget {
           ),
 
           // Our Complients
-          OurCompliencesSection(
+          const OurCompliencesSection(
             sectionHeight: 50.0,
             sectionPadding: 0.02,
             titleFontSize: 5.0,

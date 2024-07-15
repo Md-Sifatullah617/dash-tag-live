@@ -52,8 +52,8 @@ class ContactInformationTablet extends StatelessWidget {
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.phone,
           title: ContactUsPageText.phoneText,
-          subTitle1: ContactUsPageText.phoneNumber1!,
-          subTitle2: ContactUsPageText.phoneNumber2!,
+          subTitle1: ContactUsPageText.phoneNumber1,
+          subTitle2: ContactUsPageText.phoneNumber2,
           listTileWidth: 50,
           litTileHeight: 50,
         ),
@@ -62,8 +62,8 @@ class ContactInformationTablet extends StatelessWidget {
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.mailchimp,
           title: ContactUsPageText.emailText,
-          subTitle1: ContactUsPageText.emailAddress!,
-          subTitle2: ContactUsPageText.infoEmailAddress!,
+          subTitle1: ContactUsPageText.emailAddress,
+          subTitle2: ContactUsPageText.infoEmailAddress,
           listTileWidth: 50,
           litTileHeight: 50,
         ),

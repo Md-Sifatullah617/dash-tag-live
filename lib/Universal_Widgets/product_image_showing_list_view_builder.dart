@@ -18,7 +18,7 @@ class ProductImageShowingListViewBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      physics: ScrollPhysics(),
+      physics: const ScrollPhysics(),
       shrinkWrap: true,
       itemCount: items.length,
       itemBuilder: (context, index) {

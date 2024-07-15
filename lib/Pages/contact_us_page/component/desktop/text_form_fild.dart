@@ -9,7 +9,7 @@ class TextFormFildWidget extends StatelessWidget {
   final TextEditingController? controller;
   final FormFieldValidator<String>? validator;
 
-  TextFormFildWidget({super.key,
+  const TextFormFildWidget({super.key,
 
     this.hintText,
     this.maxLine,

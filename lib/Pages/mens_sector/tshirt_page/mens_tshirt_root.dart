@@ -11,8 +11,8 @@ class MensTshirtRoot extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
       mobile: (BuildContext context) => MenTshirtPageMobile(),
-      tablet: (BuildContext context) => MenTshirtPageTablet(),
-      desktop: (BuildContext context) => TshirtPageDesktop(),
+      tablet: (BuildContext context) => const MenTshirtPageTablet(),
+      desktop: (BuildContext context) => const TshirtPageDesktop(),
     );
   }
 }

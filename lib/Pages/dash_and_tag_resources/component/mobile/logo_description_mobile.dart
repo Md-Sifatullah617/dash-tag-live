@@ -9,7 +9,6 @@ import '../../../../Utils/All_Texts/HomePageText/home_page_text.dart';
 import '../../widgets/das_and_tag_bio_commit.dart';
 
 class LogoDescriptionMobile extends StatelessWidget {
-
   double? logoHeight;
   double? logoWidth;
   double? aboutUsFontSize;
@@ -17,17 +16,14 @@ class LogoDescriptionMobile extends StatelessWidget {
   double? descriptionFontSize;
   double? descriptionCommitFontSize;
 
-
-  LogoDescriptionMobile({super.key,
-
-    this.aboutUsFontSize,
-    this.descriptionCommitFontSize,
-    this.descriptionContainerWidth,
-    this.descriptionFontSize,
-    this.logoHeight,
-    this.logoWidth
-
-  });
+  LogoDescriptionMobile(
+      {super.key,
+      this.aboutUsFontSize,
+      this.descriptionCommitFontSize,
+      this.descriptionContainerWidth,
+      this.descriptionFontSize,
+      this.logoHeight,
+      this.logoWidth});
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +41,6 @@ class LogoDescriptionMobile extends StatelessWidget {
             fontSize: aboutUsFontSize,
             fontFamily: "Caveat",
           ),
-
           SizedBox(
             height: 3.sh,
           ),
@@ -64,7 +59,6 @@ class LogoDescriptionMobile extends StatelessWidget {
               ),
             ),
           ),
-
           SizedBox(
             height: 5.sh,
           ),
@@ -73,38 +67,36 @@ class LogoDescriptionMobile extends StatelessWidget {
             width: descriptionContainerWidth,
             // color: Colors.amber,
             padding: const EdgeInsets.only(left: 20, right: 20),
-            child: Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  CustomText(
-                    title: DashAndTagResourcesText.dashAndTagBio,
-                    fontFamily: "Rajdhani",
-                    letterSpacing: 1,
-                    fontSize: descriptionFontSize,
-                  ),
-                  DasAndTagBioCommit(
-                    commit: DashAndTagResourcesText.dashAndTagBioCommit1,
-                    fontSize: descriptionCommitFontSize,
-                  ),
-                  DasAndTagBioCommit(
-                    commit: DashAndTagResourcesText.dashAndTagBioCommit2,
-                    fontSize: descriptionCommitFontSize,
-                  ),
-                  DasAndTagBioCommit(
-                    commit: DashAndTagResourcesText.dashAndTagBioCommit3,
-                    fontSize: descriptionCommitFontSize,
-                  ),
-                  DasAndTagBioCommit(
-                    commit: DashAndTagResourcesText.dashAndTagBioCommit4,
-                    fontSize: descriptionCommitFontSize,
-                  ),
-                  DasAndTagBioCommit(
-                    commit: DashAndTagResourcesText.dashAndTagBioCommit5,
-                    fontSize: descriptionCommitFontSize,
-                  ),
-                ],
-              ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CustomText(
+                  title: DashAndTagResourcesText.dashAndTagBio,
+                  fontFamily: "Rajdhani",
+                  letterSpacing: 1,
+                  fontSize: descriptionFontSize,
+                ),
+                DasAndTagBioCommit(
+                  commit: DashAndTagResourcesText.dashAndTagBioCommit1,
+                  fontSize: descriptionCommitFontSize,
+                ),
+                DasAndTagBioCommit(
+                  commit: DashAndTagResourcesText.dashAndTagBioCommit2,
+                  fontSize: descriptionCommitFontSize,
+                ),
+                DasAndTagBioCommit(
+                  commit: DashAndTagResourcesText.dashAndTagBioCommit3,
+                  fontSize: descriptionCommitFontSize,
+                ),
+                DasAndTagBioCommit(
+                  commit: DashAndTagResourcesText.dashAndTagBioCommit4,
+                  fontSize: descriptionCommitFontSize,
+                ),
+                DasAndTagBioCommit(
+                  commit: DashAndTagResourcesText.dashAndTagBioCommit5,
+                  fontSize: descriptionCommitFontSize,
+                ),
+              ],
             ),
           ),
         ],

@@ -11,8 +11,8 @@ class OurClientsRoot extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
       mobile: (BuildContext context) => OurClientsMobile(),
-      tablet: (BuildContext context) => OurClientsTablet(),
-      desktop: (BuildContext context) => OurClientsPageDesktop(),
+      tablet: (BuildContext context) => const OurClientsTablet(),
+      desktop: (BuildContext context) => const OurClientsPageDesktop(),
     );
   }
 }

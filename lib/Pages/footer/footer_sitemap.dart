@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../../Utils/All_Texts/Contact_Us_Page_Text/contact_us_page_text.dart';
 
 class FooterSiteMap extends StatelessWidget {
   const FooterSiteMap({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

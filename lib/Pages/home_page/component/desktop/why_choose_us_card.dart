@@ -91,7 +91,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Lists/all_lists.dart';
@@ -105,7 +104,7 @@ class HowItWorksCardItem extends StatefulWidget {
   final double? titleFontSize;
   final double? subTitleFontSize;
 
-  HowItWorksCardItem({
+  const HowItWorksCardItem({
     super.key,
     this.crossAxisCount,
     this.cardHeight,

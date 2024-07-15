@@ -10,14 +10,11 @@ import '../../../../controller/main_controller.dart';
 import '../../../footer/footer.dart';
 import '../../../mission_vission_page/component/desktop/product_page_header_image.dart';
 
-
 class OurClientsTablet extends StatelessWidget {
   const OurClientsTablet({super.key});
 
   @override
   Widget build(BuildContext context) {
-
-
     final MainController controller = Get.find();
     return Scaffold(
       body: ListView(
@@ -30,39 +27,36 @@ class OurClientsTablet extends StatelessWidget {
           SizedBox(height: 5.sh),
           Padding(
             padding: const EdgeInsets.all(50.0),
-            child: Expanded(
-              child: AlignedGridView.count(
-                  crossAxisCount: 2,
-                  shrinkWrap: true,
-                  itemCount: AllListsManager.ourClientsPageList.length,
-                  itemBuilder: (context, index) {
-                    return Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Card(
-                        elevation: 10,
-                        color: Colors.white,
-                        child: Container(
-                          height: 200,
-                          width: 200,
-                          decoration: BoxDecoration(
-                              border: Border.all(color: ColorManager.blueColor),
-                              image: DecorationImage(
-                                fit: BoxFit.contain,
-                                image: AssetImage(
-                                    AllListsManager.ourClientsPageList[index]),
-                              )),
-                        ),
+            child: AlignedGridView.count(
+                crossAxisCount: 2,
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                itemCount: AllListsManager.ourClientsPageList.length,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Card(
+                      elevation: 10,
+                      color: Colors.white,
+                      child: Container(
+                        height: 200,
+                        width: 200,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: ColorManager.blueColor),
+                            image: DecorationImage(
+                              fit: BoxFit.contain,
+                              image: AssetImage(
+                                  AllListsManager.ourClientsPageList[index]),
+                            )),
                       ),
-                    );
-                  }),
-            ),
+                    ),
+                  );
+                }),
           ),
           const SizedBox(height: 250),
           const Footer(),
         ],
       ),
     );
-
-
   }
 }

@@ -21,7 +21,7 @@ class ProductImageShowingListviewbuilderMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
       shrinkWrap: true,
-      physics: ScrollPhysics(),
+      physics: const ScrollPhysics(),
       itemCount: (items.length / 2).ceil(), // Adjust itemCount to handle pairs of items
       itemBuilder: (context, index) {
         int firstIndex = index * 2;

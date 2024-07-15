@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class MeterItem extends StatelessWidget {
   const MeterItem({
-    Key? key,
+    super.key,
     required this.isTall,
     required this.metric,
-  }) : super(key: key);
+  });
   final bool isTall;
   final String metric;
 

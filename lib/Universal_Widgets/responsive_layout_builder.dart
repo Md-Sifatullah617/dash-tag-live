@@ -5,7 +5,7 @@ class ResponsiveLayoutBuilder extends StatelessWidget {
   final Widget? desktop;
   final Widget? tablet;
 
-  ResponsiveLayoutBuilder({super.key, this.desktop, this.tablet, this.mobile});
+  const ResponsiveLayoutBuilder({super.key, this.desktop, this.tablet, this.mobile});
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,4 @@
 import 'package:dash_and_tag_web_site/Universal_Widgets/custom_drawer.dart';
-import 'package:dash_and_tag_web_site/Universal_Widgets/custom_expantion_widget.dart';
 import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Lists/all_lists.dart';
@@ -12,15 +11,10 @@ import 'package:responsive_builder/responsive_builder.dart';
 import '../../../../Universal_Widgets/custom_appbar.dart';
 import '../../../../controller/main_controller.dart';
 import '../../../footer/footer.dart';
-import '../../component/desktop/about_us.dart';
-import '../../component/desktop/header_section.dart';
 import '../../component/desktop/our_complience_section.dart';
-import '../../component/desktop/our_product_section.dart';
-import '../../component/desktop/why_choose_us.dart';
 import '../../component/mobile/about_us_mobile.dart';
 import '../../component/mobile/header_section_mobile.dart';
 import '../../component/mobile/our_product_section_mobile.dart';
-import '../../component/tablet/about_us_tablet.dart';
 
 class HomePageMobile extends StatelessWidget {
   HomePageMobile({super.key});

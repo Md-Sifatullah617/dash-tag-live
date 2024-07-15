@@ -1,6 +1,5 @@
 import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
-import 'package:dash_and_tag_web_site/Utils/All_Texts/Contact_Us_Page_Text/contact_us_page_text.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -37,7 +36,7 @@ class ContactInformationShowingWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
+        SizedBox(
           width: double.maxFinite,
           child: ListTile(
             leading: Container(

@@ -29,7 +29,7 @@ class FooterBottomSocialButtons extends StatelessWidget {
                 tablet: false,
                 desktop: true,
               )
-                  ? BorderSide(color: Color(0xff988968))
+                  ? const BorderSide(color: Color(0xff988968))
                   : BorderSide.none,
             ),
             child: InkWell(
@@ -47,7 +47,7 @@ class FooterBottomSocialButtons extends StatelessWidget {
                   tablet: 20,
                   desktop: 30,
                 ),
-                child: Center(
+                child: const Center(
                   child: Icon(
                     FontAwesomeIcons.facebookF,
                     size: 20,
@@ -74,7 +74,7 @@ class FooterBottomSocialButtons extends StatelessWidget {
                 tablet: false,
                 desktop: true,
               )
-                  ? BorderSide(color: Color(0xff988968))
+                  ? const BorderSide(color: Color(0xff988968))
                   : BorderSide.none,
             ),
             child: InkWell(
@@ -92,7 +92,7 @@ class FooterBottomSocialButtons extends StatelessWidget {
                   tablet: 20,
                   desktop: 30,
                 ),
-                child: Center(
+                child: const Center(
                   child: Icon(
                     FontAwesomeIcons.twitter,
                     size: 20,
@@ -119,7 +119,7 @@ class FooterBottomSocialButtons extends StatelessWidget {
                 tablet: false,
                 desktop: true,
               )
-                  ? BorderSide(color: Color(0xff988968))
+                  ? const BorderSide(color: Color(0xff988968))
                   : BorderSide.none,
             ),
             child: InkWell(
@@ -137,7 +137,7 @@ class FooterBottomSocialButtons extends StatelessWidget {
                   tablet: 20,
                   desktop: 30,
                 ),
-                child: Center(
+                child: const Center(
                   child: Icon(
                     FontAwesomeIcons.linkedinIn,
                     size: 20,

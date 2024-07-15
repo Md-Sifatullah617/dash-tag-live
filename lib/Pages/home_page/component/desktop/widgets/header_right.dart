@@ -19,7 +19,7 @@ class _HeaderRightState extends State<HeaderRight> {
     return Expanded(
       child: Stack(
         children: [
-          Container(
+          SizedBox(
             width: double.infinity,
             child: CarouselSlider(
               items: AllListsManager.mainSliderImageList

@@ -1,12 +1,9 @@
 import 'package:dash_and_tag_web_site/Pages/all_product_show_case/accessories_page.dart';
 import 'package:dash_and_tag_web_site/Pages/contact_us_page/contact_us_root.dart';
-import 'package:dash_and_tag_web_site/Pages/mens_sector/men_jeans/mens_jeans.dart';
-import 'package:dash_and_tag_web_site/Pages/mens_sector/polo_shirts/polo_shirts.dart';
 import 'package:dash_and_tag_web_site/Pages/profile_page/profile_page.dart';
 import 'package:get/get.dart';
 import '../Pages/dash_and_tag_resources/dash_and_tag_resouces_root.dart';
 import '../Pages/home_page/home_page_root.dart';
-import '../Pages/mens_sector/tshirt_page/mens_tshirt_root.dart';
 import '../Pages/mission_vission_page/mission_vission_root.dart';
 import '../Pages/our_clients_page/our_clients_root.dart';
 import '../Pages/services_sector/services_page_root.dart';
@@ -67,15 +64,15 @@ class AppRoutes {
   static const String leatherproduct = '/leatherproduct';
 
   static List<GetPage<dynamic>> pages = [
-    GetPage(name: home, page: () => HomePageRoot()),
-    GetPage(name: aboutResources, page: () => DashAndTagResoucesRoot()),
-    GetPage(name: missionVision, page: () => MissionVissionRoot()),
+    GetPage(name: home, page: () => const HomePageRoot()),
+    GetPage(name: aboutResources, page: () => const DashAndTagResoucesRoot()),
+    GetPage(name: missionVision, page: () => const MissionVissionRoot()),
     // GetPage(name: mensjeans, page: () => MeansJeans()),
     // GetPage(name: menstshirts, page: () => MensTshirtRoot()),
     // GetPage(name: menspoloshirts, page: () => PoloShirts()),
-    GetPage(name: contact, page: () => ContactUsRoot()),
-    GetPage(name: clients, page: () => OurClientsRoot()),
-    GetPage(name: services, page: () => ServicesPageRoot()),
+    GetPage(name: contact, page: () => const ContactUsRoot()),
+    GetPage(name: clients, page: () => const OurClientsRoot()),
+    GetPage(name: services, page: () => const ServicesPageRoot()),
     GetPage(name: profile, page: () => ProfilePage()),
     GetPage(name: accessoeies, page: () => ProductShowcasePage()),
     GetPage(name: leatherproduct, page: () => ProductShowcasePage()),

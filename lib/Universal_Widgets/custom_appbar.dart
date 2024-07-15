@@ -1,6 +1,3 @@
-import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
-import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
-import 'package:dash_and_tag_web_site/Utils/All_Images/all_images.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Texts/HomePageText/home_page_text.dart';
 import 'package:dash_and_tag_web_site/Utils/routes.dart';
 import 'package:dash_and_tag_web_site/controller/main_controller.dart';
@@ -9,8 +6,6 @@ import 'package:get/get.dart';
 import 'package:pluto_menu_bar/pluto_menu_bar.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
-
-import '../Pages/home_page/component/desktop/widgets/footer_bottom_social_buttons.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({
@@ -27,9 +22,9 @@ class CustomAppbar extends StatelessWidget {
       padding: EdgeInsets.symmetric(
         horizontal: getValueForScreenType<double>(
           context: context,
-          mobile: 0,
-          tablet: Get.width * 0.04,
-          desktop: Get.width * 0.1,
+          mobile: Get.width * 0.02,
+          tablet: Get.width * 0.02,
+          desktop: Get.width * 0.05,
         ),
       ),
       color: Colors.white,
@@ -55,18 +50,21 @@ class CustomAppbar extends StatelessWidget {
             },
             child: GradientText(
               HomePageText.webSiteName,
-              style: const TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                shadows: [
-
-                   Shadow(
-                     blurRadius: 10.0,
-                     color: Colors.black38,
-                     offset: Offset(5.0, 5.0),
-                   )
-                ]
-              ),
+              style: TextStyle(
+                  fontSize: getValueForScreenType<double>(
+                    context: context,
+                    mobile: 20,
+                    tablet: 20,
+                    desktop: 30,
+                  ),
+                  fontWeight: FontWeight.bold,
+                  shadows: const [
+                    Shadow(
+                      blurRadius: 10.0,
+                      color: Colors.black38,
+                      offset: Offset(5.0, 5.0),
+                    )
+                  ]),
               gradientType: GradientType.linear,
               colors: const [
                 Color(0xFF8A2BE2), // BlueViolet
@@ -97,8 +95,8 @@ class CustomAppbar extends StatelessWidget {
                         width: getValueForScreenType<double>(
                           context: context,
                           mobile: 0,
-                          tablet: 350,
-                          desktop: 550,
+                          tablet: 362,
+                          desktop: 552,
                         ),
                         child: PlutoMenuBar(
                           mode: PlutoMenuBarMode.hover,
@@ -119,7 +117,7 @@ class CustomAppbar extends StatelessWidget {
                               fontSize: getValueForScreenType<double>(
                                 context: context,
                                 mobile: 5,
-                                tablet: 10,
+                                tablet: 11,
                                 desktop: 14,
                               ),
                               fontWeight: FontWeight.bold,

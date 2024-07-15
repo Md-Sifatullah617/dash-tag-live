@@ -36,7 +36,7 @@ class Footer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 // FooterContact(),
-                FooterInfo(),
+                const FooterInfo(),
                 SizedBox(
                   height: getValueForScreenType<double>(
                     context: context,
@@ -46,7 +46,7 @@ class Footer extends StatelessWidget {
                   ),
                 ),
 
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     FooterSiteMap(),
@@ -63,7 +63,7 @@ class Footer extends StatelessWidget {
                 ),
 
                 FooterSubscribe(),
-                Align(
+                const Align(
                   alignment: Alignment.center,
                     child: FooterBottomLicence(),
                 ),
@@ -78,12 +78,12 @@ class Footer extends StatelessWidget {
               ? Stack(
                   clipBehavior: Clip.none,
                   children: [
-                    FooterContact(),
+                    const FooterContact(),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        SizedBox(height: 140),
-                        FooterInfo(),
+                        const SizedBox(height: 140),
+                        const FooterInfo(),
                         SizedBox(
                             height: getValueForScreenType<double>(
                           context: context,
@@ -91,16 +91,16 @@ class Footer extends StatelessWidget {
                           tablet: 60,
                           desktop: 60,
                         )),
-                        Row(
+                        const Row(
                           children: [
                             FooterSiteMap(),
                             FooterCompany(),
                           ],
                         ),
-                        SizedBox(height: 40),
+                        const SizedBox(height: 40),
                         FooterSubscribe(),
-                        SizedBox(height: 40),
-                        FooterBottom(),
+                        const SizedBox(height: 40),
+                        const FooterBottom(),
                       ],
                     ),
                   ],
@@ -108,11 +108,11 @@ class Footer extends StatelessWidget {
               : Stack(
                   clipBehavior: Clip.none,
                   children: [
-                    FooterContact(),
+                    const FooterContact(),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        SizedBox(height: 140),
+                        const SizedBox(height: 140),
 
                         // SizedBox(height: getValueForScreenType<double>(
                         //   context: context,
@@ -121,7 +121,7 @@ class Footer extends StatelessWidget {
                         //   desktop: 60,
                         // )),
 
-                        Row(
+                        const Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             FooterInfo(),
@@ -129,12 +129,12 @@ class Footer extends StatelessWidget {
                             FooterCompany()
                           ],
                         ),
-                        SizedBox(height: 40),
+                        const SizedBox(height: 40),
 
                         FooterSubscribe(),
-                        SizedBox(height: 40),
+                        const SizedBox(height: 40),
 
-                        FooterBottom(),
+                        const FooterBottom(),
                       ],
                     ),
                   ],

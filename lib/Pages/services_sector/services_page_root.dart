@@ -12,8 +12,8 @@ class ServicesPageRoot extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveLayoutBuilder(
       mobile: ServicesPageMobile(),
-      tablet: ServicesPageTablet(),
-      desktop: ServicesPagesDesktop(),
+      tablet: const ServicesPageTablet(),
+      desktop: const ServicesPagesDesktop(),
     );
   }
 }

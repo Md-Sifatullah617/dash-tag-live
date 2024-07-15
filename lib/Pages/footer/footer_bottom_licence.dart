@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 class FooterBottomLicence extends StatelessWidget {
   const FooterBottomLicence({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       // children: [
       //   '© 2022'.poppins(
       //     color: Colors.white,

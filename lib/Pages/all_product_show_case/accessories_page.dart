@@ -214,7 +214,7 @@ class ProductShowcasePage extends StatelessWidget {
                         //     mobile: 50,
                         //     tablet: 400,
                         //     desktop: 500),
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           // border: Border.all(color: Colors.blue),
                         ),

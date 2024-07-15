@@ -28,7 +28,7 @@ class FooterContact extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Spacer(),
+            const Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -143,7 +143,7 @@ class FooterContact extends StatelessWidget {
                 ),
               ],
             ),
-            Spacer(),
+            const Spacer(),
             SizedBox(
               height: 88,
               child: Row(

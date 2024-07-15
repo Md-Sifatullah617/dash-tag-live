@@ -11,18 +11,16 @@ import '../../component/desktop/mission_vission_image_and_description.dart';
 import '../../component/desktop/product_page_header_image.dart';
 
 class MissionVissionPageDesktop extends StatelessWidget {
-  MissionVissionPageDesktop({super.key});
+  const MissionVissionPageDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
-
     final MainController controller = Get.find();
 
     return Scaffold(
       backgroundColor: ColorManager.webBackgroundColor,
       body: ListView(
         children: [
-
           CustomAppbar(controller: controller),
 
           // Mission Vission Header Image
@@ -47,7 +45,7 @@ class MissionVissionPageDesktop extends StatelessWidget {
           ),
 
           // Our Complients
-          OurCompliencesSection(
+          const OurCompliencesSection(
             sectionHeight: 50.0,
             sectionPadding: 0.02,
             titleFontSize: 5.0,

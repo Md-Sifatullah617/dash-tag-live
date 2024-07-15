@@ -17,12 +17,11 @@ class DashAndTagResoucesTablet extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-
         children: [
           CustomAppbar(controller: controller),
-
-          AboutUsPageBanner(bannerHeight: 15.sh,),
-
+          AboutUsPageBanner(
+            bannerHeight: 15.sh,
+          ),
           LogoDescriptionTablet(
             aboutUsFontSize: 10.sw,
             descriptionCommitFontSize: 3.2.sw,
@@ -31,26 +30,10 @@ class DashAndTagResoucesTablet extends StatelessWidget {
             logoHeight: 65.sh,
             logoWidth: double.maxFinite,
           ),
-          SizedBox(height: 2.sh,),
-
-          getValueForScreenType<bool>(
-            context: context,
-            mobile: true,
-            tablet: true,
-            desktop: true,
-          )
-              ? OurCompliencesSection(
-            sectionHeight: 50.0,
-            sectionPadding: 0.02,
-            titleFontSize: 5.0,
-            titleSpacing: 4.0,
-            carouselHeight: 300.0,
-            imageWidth: 300.0,
-            imageHeight: 300.0,
-            buttonPadding: 10.0,
-            buttonIconSize: 20.0,
-            viewPortFraction: 0.3,
-          ) : OurCompliencesSection(
+          SizedBox(
+            height: 2.sh,
+          ),
+          const OurCompliencesSection(
             sectionHeight: 50.0,
             sectionPadding: 0.02,
             titleFontSize: 5.0,
@@ -62,8 +45,6 @@ class DashAndTagResoucesTablet extends StatelessWidget {
             buttonIconSize: 20.0,
             viewPortFraction: 0.3,
           ),
-
-
           const Footer(),
         ],
       ),

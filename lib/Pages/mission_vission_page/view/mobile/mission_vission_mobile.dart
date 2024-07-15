@@ -9,7 +9,6 @@ import '../../../../Utils/All_Texts/Mission_Vission_Text/mission_vission_text.da
 import '../../../../controller/main_controller.dart';
 import '../../../footer/footer.dart';
 import '../../../home_page/component/desktop/our_complience_section.dart';
-import '../../component/desktop/mission_vission_image_and_description.dart';
 import '../../component/desktop/product_page_header_image.dart';
 import '../../component/mobile/mission_vission_image_description_mobile.dart';
 
@@ -47,7 +46,7 @@ class MissionVissionMobile extends StatelessWidget {
           ),
 
           // Our Complients
-          OurCompliencesSection(
+          const OurCompliencesSection(
             sectionHeight: 50.0,
             sectionPadding: 0.02,
             titleFontSize: 5.0,

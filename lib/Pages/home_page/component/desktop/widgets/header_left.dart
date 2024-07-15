@@ -5,12 +5,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 class HeaderLeft extends StatelessWidget {
   const HeaderLeft({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return const Expanded(
       child: Column(
         // crossAxisAlignment: isBigScreen
         //     ? CrossAxisAlignment.start
@@ -18,9 +18,9 @@ class HeaderLeft extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           HeaderLeftTitle(isBigScreen: true),
-          const SizedBox(height: 24),
+          SizedBox(height: 24),
           HeaderLeftSubtitle(pad: 10, isBigScreen: true),
-          const SizedBox(height: 52),
+          SizedBox(height: 52),
           HeaderLeftInput(pad: 10),
         ],
       ),
@@ -30,9 +30,9 @@ class HeaderLeft extends StatelessWidget {
 
 class HeaderLeftInput extends StatelessWidget {
   const HeaderLeftInput({
-    Key? key,
+    super.key,
     required this.pad,
-  }) : super(key: key);
+  });
 
   final double pad;
 
@@ -51,7 +51,7 @@ class HeaderLeftInput extends StatelessWidget {
             color: ColorManager.webBackgroundColor.withOpacity(0.5), // Shadow color
             spreadRadius: 5, // Spread radius
             blurRadius: 7, // Blur radius
-            offset: Offset(0, 3), // Shadow position
+            offset: const Offset(0, 3), // Shadow position
           ),
         ],
       ),
@@ -88,10 +88,10 @@ class HeaderLeftInput extends StatelessWidget {
             color: Colors.blue,
             child: InkWell(
               onTap: () {},
-              child: SizedBox(
+              child: const SizedBox(
                 height: 72 - 16,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 32),
+                  padding: EdgeInsets.symmetric(horizontal: 32),
                   child: Center(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -107,8 +107,8 @@ class HeaderLeftInput extends StatelessWidget {
                                 height: 1.75,
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16)),
-                        const SizedBox(width: 10),
-                        const Icon(
+                        SizedBox(width: 10),
+                        Icon(
                           FontAwesomeIcons.chevronRight,
                           color: Colors.white,
                           size: 12,
@@ -128,10 +128,10 @@ class HeaderLeftInput extends StatelessWidget {
 
 class HeaderLeftSubtitle extends StatelessWidget {
   const HeaderLeftSubtitle({
-    Key? key,
+    super.key,
     required this.pad,
     required this.isBigScreen,
-  }) : super(key: key);
+  });
 
   final double pad;
   final bool isBigScreen;
@@ -160,14 +160,13 @@ class HeaderLeftSubtitle extends StatelessWidget {
 }
 
 class HeaderLeftTitle extends StatelessWidget {
-  const HeaderLeftTitle({Key? key, required this.isBigScreen})
-      : super(key: key);
+  const HeaderLeftTitle({super.key, required this.isBigScreen});
   final bool isBigScreen;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 120),
+      padding: const EdgeInsets.symmetric(horizontal: 120),
       child: Text(
         'Unleashing Fashion, One Piece at a Time',
         textAlign: isBigScreen ? TextAlign.left : TextAlign.center,

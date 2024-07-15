@@ -67,18 +67,17 @@ flutter:
     - assets/images/womens_cloth/
     - assets/images/kids_cloth/
     - assets/images/about_d_t/
-    - assets/images/main_slider_images/
     - assets/images/website_logo/
     - assets/images/services/
     - assets/images/clients_images/
     - assets/images/products/Accessories/
     - assets/images/products/Boys/Hoodies/
-    - assets/images/products/Boys/jens/
+    - assets/images/products/Boys/Jens/
     - assets/images/products/Boys/shirt_and_pant/
     - assets/images/products/Boys/short_and_cargo/
     - assets/images/products/Boys/Sweaters/
     - assets/images/products/Girls/Hoodies/
-    - assets/images/products/Girls/jens/
+    - assets/images/products/Girls/Jens/
     - assets/images/products/Girls/T-Shirts/
     - assets/images/products/Girls/shirt_and_pant/
     - assets/images/products/Girls/short_and_cargo/

@@ -11,8 +11,8 @@ class MissionVissionRoot extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
       mobile: (BuildContext context) => MissionVissionMobile(),
-      tablet: (BuildContext context) => MissionVissionTablet(),
-      desktop: (BuildContext context) => MissionVissionPageDesktop(),
+      tablet: (BuildContext context) => const MissionVissionTablet(),
+      desktop: (BuildContext context) => const MissionVissionPageDesktop(),
     );
   }
 }

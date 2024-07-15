@@ -9,7 +9,7 @@ import '../../../../footer/footer.dart';
 import '../../../../mission_vission_page/component/desktop/product_page_header_image.dart';
 
 class TshirtPageDesktop extends StatelessWidget {
-  TshirtPageDesktop({super.key});
+  const TshirtPageDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
