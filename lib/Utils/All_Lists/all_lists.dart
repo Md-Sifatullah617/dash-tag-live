@@ -4,7 +4,6 @@ import 'package:dash_and_tag_web_site/Utils/All_Texts/HomePageText/home_page_tex
 import '../All_Texts/Quality_Assurance_PageText/quality_assurance_page_text.dart';
 
 class AllListsManager {
-
   //Home Page Men, Women, Kids Sliders List
   static List womensClothList = [
     "assets/images/womens_cloth/1.png",
@@ -43,35 +42,33 @@ class AllListsManager {
     "assets/images/kids_cloth/25.jpg",
     "assets/images/kids_cloth/26.jpg",
     "assets/images/kids_cloth/27.jpg",
-
   ];
 
   static List mainSliderImageList = [
-    "assets/images/main_slider_images/1.png",
-    "assets/images/main_slider_images/2.png",
-    "assets/images/main_slider_images/3.png",
-    "assets/images/main_slider_images/4.png",
-    "assets/images/main_slider_images/5.png",
-    "assets/images/main_slider_images/6.png",
-    "assets/images/main_slider_images/7.png",
-    "assets/images/main_slider_images/8.png",
-    "assets/images/main_slider_images/9.png",
-    "assets/images/main_slider_images/10.png",
-    "assets/images/main_slider_images/11.png",
-    "assets/images/main_slider_images/12.png",
-    "assets/images/main_slider_images/13.png",
+    "assets/assets/images/means_jeans/1.png",
+    "assets/assets/images/means_jeans/2.png",
+    "assets/assets/images/means_jeans/3.png",
+    "assets/assets/images/means_jeans/4.png",
+    "assets/assets/images/means_jeans/5.png",
+    "assets/assets/images/means_jeans/6.png",
+    "assets/assets/images/means_jeans/7.png",
+    "assets/assets/images/means_jeans/8.png",
+    "assets/assets/images/means_jeans/9.png",
+    "assets/assets/images/means_jeans/10.png",
+    "assets/assets/images/means_jeans/11.png",
+    "assets/assets/images/means_jeans/12.png",
+    "assets/assets/images/means_jeans/13.png",
   ];
 
-
   static List complientsList = [
-    "assets/images/complaients/1.jpeg",
-    "assets/images/complaients/2.png",
-    "assets/images/complaients/3.png",
-    "assets/images/complaients/4.png",
-    "assets/images/complaients/5.png",
-    "assets/images/complaients/6.png",
-    "assets/images/complaients/7.webp",
-    "assets/images/complaients/8.jpg",
+    "assets/images/means_jeans/c1.jpeg",
+    "assets/images/means_jeans/c2.png",
+    "assets/images/means_jeans/c3.png",
+    "assets/images/means_jeans/c4.png",
+    "assets/images/means_jeans/c5.png",
+    "assets/images/means_jeans/c6.png",
+    "assets/images/means_jeans/c7.webp",
+    "assets/images/means_jeans/c8.jpg",
   ];
 
   static List whyChooseUsList = [
@@ -92,13 +89,11 @@ class AllListsManager {
       "title": HomePageText.whyChooseUsAdvancedCADSystems,
       "description": HomePageText.whyChooseUsAdvancedCADSystemsDescription,
     },
-
     {
       "title": HomePageText.whyChooseUsExceptionalSamplingAndDesign,
       "description":
           HomePageText.whyChooseUsExceptionalSamplingAndDesignDescription,
     },
-
     {
       "title": HomePageText.whyChooseUsHighFashionAndIntricateValueAdditions,
       "description": HomePageText
@@ -425,8 +420,6 @@ class AllListsManager {
     "assets/images/products/Boys/short_and_cargo/82.png",
     "assets/images/products/Boys/short_and_cargo/83.png",
     "assets/images/products/Boys/short_and_cargo/84.png",
-
-
   ];
 
   //Boys\Sweaters
@@ -499,7 +492,6 @@ class AllListsManager {
     "assets/images/products/Boys/Sweaters/66.png",
     "assets/images/products/Boys/Sweaters/67.png",
     "assets/images/products/Boys/Sweaters/68.png",
-
   ];
 
   //Boys\T-Shirts
@@ -541,10 +533,6 @@ class AllListsManager {
     "assets/images/products/Boys/T-Shirts/35.png",
     "assets/images/products/Boys/T-Shirts/36.png",
   ];
-
-
-
-
 
   //Girls Section -> Clear
 
@@ -614,7 +602,6 @@ class AllListsManager {
     "assets/images/products/Girls/Jens/62.jpg",
     "assets/images/products/Girls/Jens/63.jpg",
     "assets/images/products/Girls/Jens/64.jpg",
-
   ];
 
   //Girls\T-Shirts
@@ -681,7 +668,6 @@ class AllListsManager {
     "assets/images/products/Girls/T-Shirts/60.png",
     "assets/images/products/Girls/T-Shirts/61.png",
     "assets/images/products/Girls/T-Shirts/62.png",
-
   ];
 
   //Polo Shirts
@@ -746,7 +732,6 @@ class AllListsManager {
     "assets/images/products/Girls/Polo Shirts/58.png",
     "assets/images/products/Girls/Polo Shirts/59.png",
     "assets/images/products/Girls/Polo Shirts/60.png",
-
   ];
 
   //Girls\shirt_and_pant
@@ -829,7 +814,6 @@ class AllListsManager {
     "assets/images/products/Girls/Hoodies/34.png",
     "assets/images/products/Girls/Hoodies/35.png",
     "assets/images/products/Girls/Hoodies/36.png",
-
   ];
 
   //Girls\short_and_cargo
@@ -970,15 +954,7 @@ class AllListsManager {
     "assets/images/products/Girls/Sweaters/73.png",
     "assets/images/products/Girls/Sweaters/74.png",
     "assets/images/products/Girls/Sweaters/75.png"
-
   ];
-
-
-
-
-
-
-
 
   //Mens Section -> Clear
 
@@ -1095,7 +1071,6 @@ class AllListsManager {
     "assets/images/products/men/Polo Shirts/15.png",
     "assets/images/products/men/Polo Shirts/16.png",
     "assets/images/products/men/Polo Shirts/17.png",
-
   ];
 
   //Men shirt_and_pant List
@@ -1173,7 +1148,6 @@ class AllListsManager {
     "assets/images/products/men/short_and_cargo/33.png",
     "assets/images/products/men/short_and_cargo/34.png",
     "assets/images/products/men/short_and_cargo/35.png",
-
   ];
 
   //Mens Sweaters List
@@ -1236,12 +1210,6 @@ class AllListsManager {
     "assets/images/products/men/Sweaters/56.png",
     "assets/images/products/men/Sweaters/57.png",
   ];
-
-
-
-
-
-
 
   //Womens Section -> clear
   //Womens HoodiesSection
@@ -1695,8 +1663,6 @@ class AllListsManager {
     "assets/images/products/Women/T-Shirts/49.png",
     "assets/images/products/Women/T-Shirts/50.png",
   ];
-
-
 
   //Quality Page List
   static List qualityPointsList = [

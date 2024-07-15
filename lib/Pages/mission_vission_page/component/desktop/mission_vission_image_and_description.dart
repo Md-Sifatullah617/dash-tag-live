@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../../../../Universal_Widgets/custom_text.dart';
@@ -8,49 +7,43 @@ import '../../../../Utils/All_Texts/HomePageText/home_page_text.dart';
 import '../../../../Utils/All_Texts/Mission_Vission_Text/mission_vission_text.dart';
 
 class MissionVissionImageAndDescription extends StatelessWidget {
-
   double? imageHeight;
   double? imageWidth;
   double? titleFontSize;
   double? descriptionFontSize;
   double? descriptionContainerWidth;
 
-
-  MissionVissionImageAndDescription({super.key,
-
-    this.imageWidth,
-    this.imageHeight,
-    this.descriptionFontSize,
-    this.descriptionContainerWidth,
-    this.titleFontSize
-
-  });
-
+  MissionVissionImageAndDescription(
+      {super.key,
+      this.imageWidth,
+      this.imageHeight,
+      this.descriptionFontSize,
+      this.descriptionContainerWidth,
+      this.titleFontSize});
 
   @override
   Widget build(BuildContext context) {
-
     return Column(
       children: [
-
         Padding(
-          padding: EdgeInsets.only(left: 15.sw, right: 15.sw, top: 10.sh, ),
+          padding: EdgeInsets.only(
+            left: 15.sw,
+            right: 15.sw,
+            top: 10.sh,
+          ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               //Website Logo Image
-
 
               //Mission Vission Text
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-
                         Row(
                           children: [
                             Card(
@@ -74,7 +67,6 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                             ),
                           ],
                         ),
-
                         Expanded(
                           child: Card(
                             elevation: 10,
@@ -88,7 +80,8 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                                   CustomText(
                                     title: MissionVissionText.valueTitle,
                                     fontWeight: FontWeight.bold,
-                                    fontFamily: HomePageText.fontFamilyNameRajdhani,
+                                    fontFamily:
+                                        HomePageText.fontFamilyNameRajdhani,
                                     fontColor: ColorManager.blueColor,
                                     fontSize: titleFontSize,
                                   ),
@@ -103,9 +96,11 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                                     width: descriptionContainerWidth,
                                     child: Center(
                                       child: CustomText(
-                                        title: MissionVissionText.valueTitleDescription,
+                                        title: MissionVissionText
+                                            .valueTitleDescription,
                                         fontWeight: FontWeight.bold,
-                                        fontFamily: HomePageText.fontFamilyNameRajdhani,
+                                        fontFamily:
+                                            HomePageText.fontFamilyNameRajdhani,
                                         fontColor: ColorManager.blackColor,
                                         fontSize: descriptionFontSize,
                                         letterSpacing: 1,
@@ -120,14 +115,13 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                             ),
                           ),
                         ),
-
                       ],
                     ),
-                    const SizedBox(height: 10,),
-
+                    const SizedBox(
+                      height: 10,
+                    ),
                     Row(
                       children: [
-
                         Expanded(
                           child: Card(
                             elevation: 10,
@@ -141,7 +135,8 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                                   CustomText(
                                     title: MissionVissionText.missionTitle,
                                     fontWeight: FontWeight.bold,
-                                    fontFamily: HomePageText.fontFamilyNameRajdhani,
+                                    fontFamily:
+                                        HomePageText.fontFamilyNameRajdhani,
                                     fontColor: ColorManager.blueColor,
                                     // fontSize: 5.sw,
                                     fontSize: titleFontSize,
@@ -158,9 +153,11 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                                     width: descriptionContainerWidth,
                                     child: Center(
                                       child: CustomText(
-                                        title: MissionVissionText.missionTitleDescription,
+                                        title: MissionVissionText
+                                            .missionTitleDescription,
                                         fontWeight: FontWeight.bold,
-                                        fontFamily: HomePageText.fontFamilyNameRajdhani,
+                                        fontFamily:
+                                            HomePageText.fontFamilyNameRajdhani,
                                         fontColor: ColorManager.blackColor,
                                         // fontSize: 2.5.sw,
                                         fontSize: descriptionFontSize,
@@ -176,9 +173,9 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                             ),
                           ),
                         ),
-
-                        const SizedBox(width: 10,),
-
+                        const SizedBox(
+                          width: 10,
+                        ),
                         Expanded(
                           child: Card(
                             elevation: 10,
@@ -192,7 +189,8 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                                   CustomText(
                                     title: MissionVissionText.vissionTitle,
                                     fontWeight: FontWeight.bold,
-                                    fontFamily: HomePageText.fontFamilyNameRajdhani,
+                                    fontFamily:
+                                        HomePageText.fontFamilyNameRajdhani,
                                     fontColor: ColorManager.blueColor,
                                     fontSize: titleFontSize,
                                   ),
@@ -207,9 +205,11 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                                     width: descriptionContainerWidth,
                                     child: Center(
                                       child: CustomText(
-                                        title: MissionVissionText.vissionTitleDescription,
+                                        title: MissionVissionText
+                                            .vissionTitleDescription,
                                         fontWeight: FontWeight.bold,
-                                        fontFamily: HomePageText.fontFamilyNameRajdhani,
+                                        fontFamily:
+                                            HomePageText.fontFamilyNameRajdhani,
                                         fontColor: ColorManager.blackColor,
                                         fontSize: descriptionFontSize,
                                         letterSpacing: 1,
@@ -224,7 +224,6 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                             ),
                           ),
                         ),
-
                       ],
                     )
                   ],

@@ -8,7 +8,6 @@ import '../../../../Utils/All_Texts/Dash_And_Tag_Resources/dash_and_tag_resource
 import '../../../../Utils/All_Texts/HomePageText/home_page_text.dart';
 
 class AboutUsPageLogoAndDescription extends StatelessWidget {
-
   double? logoHeight;
   double? logoWidth;
   double? aboutUsFontSize;
@@ -16,107 +15,99 @@ class AboutUsPageLogoAndDescription extends StatelessWidget {
   double? descriptionFontSize;
   double? descriptionCommitFontSize;
 
-
-  AboutUsPageLogoAndDescription({super.key,
-    this.aboutUsFontSize,
-    this.descriptionCommitFontSize,
-    this.descriptionContainerWidth,
-    this.descriptionFontSize,
-    this.logoHeight,
-    this.logoWidth
-  });
+  AboutUsPageLogoAndDescription(
+      {super.key,
+      this.aboutUsFontSize,
+      this.descriptionCommitFontSize,
+      this.descriptionContainerWidth,
+      this.descriptionFontSize,
+      this.logoHeight,
+      this.logoWidth});
 
   @override
   Widget build(BuildContext context) {
-
-    return Expanded(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          SizedBox(
-            width: 30.sw,
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        SizedBox(
+          width: 30.sw,
+        ),
+        Card(
+          elevation: 10,
+          child: Container(
+            height: logoHeight,
+            width: logoWidth,
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              // color: Colors.red,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Image.asset(
+              AllImages.webSiteLogo,
+              fit: BoxFit.cover,
+            ),
           ),
-          Card(
-            elevation: 10,
-            child: Container(
-              height: logoHeight,
-              width: logoWidth,
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
+        ),
+        SizedBox(
+          width: 5.sw,
+        ),
+        Expanded(
+          child: Column(
+            children: [
+              const SizedBox(
+                height: 40,
+              ),
+              CustomText(
+                title: HomePageText.aboutUs,
+                letterSpacing: 2,
+                fontColor: ColorManager.blueColor,
+                fontSize: aboutUsFontSize,
+                fontFamily: "Caveat",
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Container(
                 // color: Colors.red,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Image.asset(
-                  AllImages.webSiteLogo,
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
-          SizedBox(
-            width: 5.sw,
-          ),
-
-          Expanded(
-            child: Column(
-              children: [
-                const SizedBox(
-                  height: 40,
-                ),
-                CustomText(
-                  title: HomePageText.aboutUs,
-                  letterSpacing: 2,
-                  fontColor: ColorManager.blueColor,
-                  fontSize: aboutUsFontSize,
-                  fontFamily: "Caveat",
-                ),
-
-                const SizedBox(
-                  height: 20,
-                ),
-                Container(
-                  // color: Colors.red,
-                  width: descriptionContainerWidth,
-                  padding: const EdgeInsets.all(10),
-                  child: Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        CustomText(
-                          title: DashAndTagResourcesText.dashAndTagBio,
-                          fontFamily: "Rajdhani",
-                          letterSpacing: 1,
-                          fontSize: descriptionFontSize,
-                        ),
-                        DasAndTagBioCommit(
-                          commit: DashAndTagResourcesText.dashAndTagBioCommit1,
-                          fontSize: descriptionCommitFontSize,
-                        ),
-                        DasAndTagBioCommit(
-                          commit: DashAndTagResourcesText.dashAndTagBioCommit2,
-                          fontSize: descriptionCommitFontSize,
-                        ),
-                        DasAndTagBioCommit(
-                          commit: DashAndTagResourcesText.dashAndTagBioCommit3,
-                          fontSize: descriptionCommitFontSize,
-                        ),
-                        DasAndTagBioCommit(
-                          commit: DashAndTagResourcesText.dashAndTagBioCommit4,
-                          fontSize: descriptionCommitFontSize,
-                        ),
-                        DasAndTagBioCommit(
-                          commit: DashAndTagResourcesText.dashAndTagBioCommit5,
-                          fontSize: descriptionCommitFontSize,
-                        ),
-                      ],
+                width: descriptionContainerWidth,
+                padding: const EdgeInsets.all(10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    CustomText(
+                      title: DashAndTagResourcesText.dashAndTagBio,
+                      fontFamily: "Rajdhani",
+                      letterSpacing: 1,
+                      fontSize: descriptionFontSize,
                     ),
-                  ),
+                    DasAndTagBioCommit(
+                      commit: DashAndTagResourcesText.dashAndTagBioCommit1,
+                      fontSize: descriptionCommitFontSize,
+                    ),
+                    DasAndTagBioCommit(
+                      commit: DashAndTagResourcesText.dashAndTagBioCommit2,
+                      fontSize: descriptionCommitFontSize,
+                    ),
+                    DasAndTagBioCommit(
+                      commit: DashAndTagResourcesText.dashAndTagBioCommit3,
+                      fontSize: descriptionCommitFontSize,
+                    ),
+                    DasAndTagBioCommit(
+                      commit: DashAndTagResourcesText.dashAndTagBioCommit4,
+                      fontSize: descriptionCommitFontSize,
+                    ),
+                    DasAndTagBioCommit(
+                      commit: DashAndTagResourcesText.dashAndTagBioCommit5,
+                      fontSize: descriptionCommitFontSize,
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

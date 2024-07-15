@@ -42,7 +42,7 @@ dependencies:
   pluto_menu_bar: ^3.0.1
   responsive_builder: ^0.7.0
   simple_gradient_text: ^1.2.3
-  syncfusion_flutter_pdfviewer: ^26.1.35
+  pdfx: ^2.6.0
   universal_html: ^2.2.4
   url_launcher: ^6.3.0
   firebase_core: ^3.1.1
@@ -63,7 +63,6 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/Complaients/
     - assets/images/means_jeans/
     - assets/images/womens_cloth/
     - assets/images/kids_cloth/
@@ -72,7 +71,6 @@ flutter:
     - assets/images/website_logo/
     - assets/images/services/
     - assets/images/clients_images/
-    - assets/images/profile_pdf/
     - assets/images/products/Accessories/
     - assets/images/products/Boys/Hoodies/
     - assets/images/products/Boys/jens/

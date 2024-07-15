@@ -188,7 +188,6 @@ class _HowItWorksCardItemState extends State<HowItWorksCardItem> {
                     fontSize: getValueForScreenType<double>(
                         context: context, mobile: 10, tablet: 15, desktop: 20),
                   ),
-                  maxLines: 3,
                 ),
               ],
             ),

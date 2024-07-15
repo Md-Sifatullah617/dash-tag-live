@@ -18,50 +18,50 @@ class DashAndTagResourcesDesktop extends StatelessWidget {
       body: ListView(
         children: [
           CustomAppbar(controller: controller),
-
-          AboutUsPageBanner(bannerHeight: 20.sh,),
-
-
-           AboutUsPageLogoAndDescription(
-             aboutUsFontSize: 10.sw,
-             descriptionCommitFontSize: 3.sw,
-             descriptionContainerWidth: 50.sh,
-             descriptionFontSize: 2.sw,
-             logoHeight: 22.sh,
-             logoWidth: 45.sw,
-           ),
-          SizedBox(height: 5.sh,),
-
+          AboutUsPageBanner(
+            bannerHeight: 20.sh,
+          ),
+          AboutUsPageLogoAndDescription(
+            aboutUsFontSize: 10.sw,
+            descriptionCommitFontSize: 3.sw,
+            descriptionContainerWidth: 50.sh,
+            descriptionFontSize: 2.sw,
+            logoHeight: 22.sh,
+            logoWidth: 45.sw,
+          ),
+          SizedBox(
+            height: 5.sh,
+          ),
           getValueForScreenType<bool>(
             context: context,
             mobile: true,
             tablet: true,
             desktop: true,
           )
-              ? OurCompliencesSection(
-            sectionHeight: 50.0,
-            sectionPadding: 0.02,
-            titleFontSize: 5.0,
-            titleSpacing: 4.0,
-            carouselHeight: 300.0,
-            imageWidth: 300.0,
-            imageHeight: 300.0,
-            buttonPadding: 10.0,
-            buttonIconSize: 20.0,
-            viewPortFraction: 0.3,
-          ) : OurCompliencesSection(
-            sectionHeight: 50.0,
-            sectionPadding: 0.02,
-            titleFontSize: 5.0,
-            titleSpacing: 4.0,
-            carouselHeight: 300.0,
-            imageWidth: 300.0,
-            imageHeight: 300.0,
-            buttonPadding: 10.0,
-            buttonIconSize: 20.0,
-            viewPortFraction: 0.3,
-          ),
-
+              ? const OurCompliencesSection(
+                  sectionHeight: 50.0,
+                  sectionPadding: 0.02,
+                  titleFontSize: 5.0,
+                  titleSpacing: 4.0,
+                  carouselHeight: 300.0,
+                  imageWidth: 300.0,
+                  imageHeight: 300.0,
+                  buttonPadding: 10.0,
+                  buttonIconSize: 20.0,
+                  viewPortFraction: 0.3,
+                )
+              : const OurCompliencesSection(
+                  sectionHeight: 50.0,
+                  sectionPadding: 0.02,
+                  titleFontSize: 5.0,
+                  titleSpacing: 4.0,
+                  carouselHeight: 300.0,
+                  imageWidth: 300.0,
+                  imageHeight: 300.0,
+                  buttonPadding: 10.0,
+                  buttonIconSize: 20.0,
+                  viewPortFraction: 0.3,
+                ),
           const Footer(),
         ],
       ),

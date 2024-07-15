@@ -13,26 +13,23 @@ class HeaderSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        SizedBox(
-          width: Get.width,
-          child: CarouselSlider(
-            items: AllListsManager.mainSliderImageList
-                .map((e) => Image.network(
-                      e,
-                      fit: BoxFit.cover,
-                      width: Get.width,
-                    ))
-                .toList(),
-            options: CarouselOptions(
-              height: 750,
-              viewportFraction: 0.999,
-              autoPlay: true,
-              autoPlayInterval: const Duration(seconds: 3),
-              autoPlayAnimationDuration: const Duration(milliseconds: 400),
-              autoPlayCurve: Curves.linearToEaseOut,
-            ),
-            carouselController: controller.carouselController,
+        CarouselSlider(
+          items: AllListsManager.mainSliderImageList
+              .map((e) => Image.network(
+                    e,
+                    fit: BoxFit.cover,
+                    width: Get.width,
+                  ))
+              .toList(),
+          options: CarouselOptions(
+            height: 750,
+            viewportFraction: 0.999,
+            autoPlay: true,
+            autoPlayInterval: const Duration(seconds: 3),
+            autoPlayAnimationDuration: const Duration(milliseconds: 400),
+            autoPlayCurve: Curves.linearToEaseOut,
           ),
+          carouselController: controller.carouselController,
         ),
         Positioned(
           right: 0,
