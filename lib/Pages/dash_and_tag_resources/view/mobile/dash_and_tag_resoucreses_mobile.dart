@@ -1,4 +1,4 @@
-import 'package:dash_and_tag_web_site/universal_widgets/custom_drawer.dart';
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -9,7 +9,6 @@ import '../../../footer/footer.dart';
 import '../../../home_page/component/desktop/our_complience_section.dart';
 import '../../component/desktop/about_us_page_banner.dart';
 import '../../component/mobile/logo_description_mobile.dart';
-import '../../component/tablet/log_description_tablet.dart';
 
 class DashAndTagResoucresesMobile extends StatelessWidget {
   DashAndTagResoucresesMobile({super.key});

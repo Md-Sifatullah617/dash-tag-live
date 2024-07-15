@@ -1,5 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:dash_and_tag_web_site/utils/all_lists/all_lists.dart';
+import 'package:dash_and_tag_web_site/Utils/All_Lists/all_lists.dart';
 import 'package:flutter/material.dart';
 
 class HeaderRight extends StatefulWidget {

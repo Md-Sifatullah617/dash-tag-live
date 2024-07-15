@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_controller.dart';
+import 'package:dash_and_tag_web_site/Utils/routes.dart';
 import 'package:dash_and_tag_web_site/model/appbar_action_model.dart';
-import 'package:dash_and_tag_web_site/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pluto_menu_bar/pluto_menu_bar.dart';
@@ -20,7 +20,8 @@ class MainController extends GetxController {
       title: 'About',
       path: "",
       categories: [
-        Category(title: 'About Dash & Tag Fashion', path: AppRoutes.aboutResources),
+        Category(
+            title: 'About Dash & Tag Fashion', path: AppRoutes.aboutResources),
         Category(title: 'Mission & Vision', path: AppRoutes.missionVision),
       ],
     ),
@@ -51,9 +52,11 @@ class MainController extends GetxController {
             Category(title: 'Jens', path: AppRoutes.womensjeans),
             Category(title: 'T-Shirts', path: AppRoutes.womenstshirts),
             Category(title: 'Polo Shirt', path: AppRoutes.womenspoloshirts),
-            Category(title: 'Shirts & Pants', path: AppRoutes.womensshirtspants),
+            Category(
+                title: 'Shirts & Pants', path: AppRoutes.womensshirtspants),
             Category(title: 'Hoodies', path: AppRoutes.womenshoodies),
-            Category(title: 'Shorts & Cargo', path: AppRoutes.womensshortscargo),
+            Category(
+                title: 'Shorts & Cargo', path: AppRoutes.womensshortscargo),
             Category(title: 'Sweaters', path: AppRoutes.womenssweaters),
           ],
         ),
@@ -83,7 +86,6 @@ class MainController extends GetxController {
             Category(title: 'Sweaters', path: AppRoutes.girlssweaters),
           ],
         ),
-
       ],
     ),
     AppBarAction(
@@ -141,8 +143,6 @@ class MainController extends GetxController {
       }
     }).toList();
   }
-
-
 
   final CarouselController carouselController = CarouselController();
 }

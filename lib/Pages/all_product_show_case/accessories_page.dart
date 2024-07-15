@@ -1,11 +1,10 @@
 import 'package:dash_and_tag_web_site/Pages/footer/footer.dart';
-import 'package:dash_and_tag_web_site/Pages/mission_vission_page/component/desktop/product_page_header_image.dart';
 import 'package:dash_and_tag_web_site/Universal_Widgets/custom_appbar.dart';
 import 'package:dash_and_tag_web_site/Universal_Widgets/custom_drawer.dart';
 import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Texts/HomePageText/home_page_text.dart';
-import 'package:dash_and_tag_web_site/utils/routes.dart';
+import 'package:dash_and_tag_web_site/Utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -196,32 +195,35 @@ class ProductShowcasePage extends StatelessWidget {
                 mainAxisSpacing: getValueForScreenType<double>(
                     context: context, mobile: 20, tablet: 20, desktop: 100),
                 crossAxisSpacing: getValueForScreenType<double>(
-                    context: context, mobile: 20, tablet: 20, desktop: 1.sw*10.5),
+                    context: context,
+                    mobile: 20,
+                    tablet: 20,
+                    desktop: 1.sw * 10.5),
                 childAspectRatio: getValueForScreenType<double>(
                     context: context, mobile: 0.9, tablet: 0.8, desktop: 0.9),
               ),
               itemCount: currentList.length,
               itemBuilder: (context, index) => Card(
-                elevation: 10,
-                child: Padding(
-                  padding: const EdgeInsets.all(10),
-                  child: Container(
-                    // width: 350,
-                    // height: getValueForScreenType<double>(
-                    //     context: context,
-                    //     mobile: 50,
-                    //     tablet: 400,
-                    //     desktop: 500),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      // border: Border.all(color: Colors.blue),
+                    elevation: 10,
+                    child: Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Container(
+                        // width: 350,
+                        // height: getValueForScreenType<double>(
+                        //     context: context,
+                        //     mobile: 50,
+                        //     tablet: 400,
+                        //     desktop: 500),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          // border: Border.all(color: Colors.blue),
+                        ),
+                        child: Image.asset(
+                          currentList[index],
+                        ),
+                      ),
                     ),
-                    child: Image.asset(
-                      currentList[index],
-                    ),
-                  ),
-                ),
-              )),
+                  )),
           const SizedBox(height: 250),
           const Footer(),
         ],

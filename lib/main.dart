@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dash_and_tag_web_site/firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -6,7 +7,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'Utils/routes.dart';
 import 'controller/main_controller.dart';
-import 'utils/all_colors/all_colors.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {

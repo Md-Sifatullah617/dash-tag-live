@@ -1,5 +1,5 @@
-import 'package:dash_and_tag_web_site/universal_widgets/custom_drawer.dart';
-import 'package:dash_and_tag_web_site/utils/all_colors/all_colors.dart';
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_drawer.dart';
+import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
