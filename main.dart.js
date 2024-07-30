@@ -54927,7 +54927,7 @@ A.c8(r).toString
 r=$.cd().d
 if(r==null){r=self.window.devicePixelRatio
 if(r===0)r=1}r=s.cj(0,r)
-s=A.c4(a,750,0.75*$.Z.B(),1000)
+s=A.c4(a,850,0.75*$.Z.B(),1000)
 q=0.05*$.a7.B()
 p=A.c4(a,0,20,10)
 if(A.c4(a,!1,!0,!1))o=A.aM(A.b([B.n3,A.Q(n,A.c4(a,0,10,0),n),B.YO,A.Q(n,A.c4(a,0,40,0),n),A.aQL(),B.Hd],t.p),B.m,n,B.kd,B.i)
@@ -55773,11 +55773,11 @@ A.c8(o).toString
 r=r.d
 if(r==null){r=self.window.devicePixelRatio
 if(r===0)r=1}p=A.c4(a,s.cj(0,r).a*0.05,q.a*0.02,p.a*0.02)
-q=A.fS(n,A.aWE(new A.TW(B.Rd,B.OE,A.eq(n,n,n,n,n,n,n,n,n,n,n,A.c4(a,28,20,18),n,n,B.t,n,n,!0,n,n,n,n,n,B.Ru,n,n),"Dash & Tag Fashion",n),B.iV),B.a0,!1,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,new A.ag0(),n,n,n,n,n,n,!1,B.aY)
+q=A.fS(n,A.aWE(new A.TW(B.Rd,B.OE,A.eq(n,n,n,n,n,n,n,n,n,n,n,A.c4(a,25,20,18),n,n,B.t,n,n,!0,n,n,n,n,n,B.Ru,n,n),"Dash & Tag Fashion",n),B.iV),B.a0,!1,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,new A.ag0(),n,n,n,n,n,n,!1,B.aY)
 if(A.c4(a,!1,!0,!1)){s=A.Jk(a).w
 r=s.y
 o=A.qv(n,n,A.fF((r==null?A.r(s).j("cB.T").a(r):r)?B.n6:B.OV,n,n,n),new A.ag1(a),n,n)
-s=o}else{s=A.c4(a,560,0,380)
+s=o}else{s=A.c4(a,560,0,3)
 r=this.c
 r=r.aLL(r.dx)
 o=A.c4(a,12,5,5)
@@ -157941,7 +157941,7 @@ $.b0W=A.t(t.N,t.xd)
 $.b1k=A.t(t.C_,t.e)
 $.aUR=["assets/images/womens_cloth/1.png","assets/images/womens_cloth/2.png","assets/images/womens_cloth/3.jpg","assets/images/womens_cloth/4.jpg","assets/images/womens_cloth/5.jpg","assets/images/womens_cloth/6.jpg"]
 $.aUQ=["assets/images/kids_cloth/1.jpg","assets/images/kids_cloth/2.jpg","assets/images/kids_cloth/3.jpg","assets/images/kids_cloth/4.jpg","assets/images/kids_cloth/5.jpg","assets/images/kids_cloth/6.jpg","assets/images/kids_cloth/7.jpg","assets/images/kids_cloth/8.jpg","assets/images/kids_cloth/9.jpg","assets/images/kids_cloth/10.jpg","assets/images/kids_cloth/11.jpg","assets/images/kids_cloth/12.jpg","assets/images/kids_cloth/13.jpg","assets/images/kids_cloth/14.jpg","assets/images/kids_cloth/15.jpg","assets/images/kids_cloth/16.jpg","assets/images/kids_cloth/17.jpg","assets/images/kids_cloth/18.jpg","assets/images/kids_cloth/19.jpg","assets/images/kids_cloth/20.jpg","assets/images/kids_cloth/21.jpg","assets/images/kids_cloth/22.jpg","assets/images/kids_cloth/23.jpg","assets/images/kids_cloth/24.jpg","assets/images/kids_cloth/25.jpg","assets/images/kids_cloth/26.jpg","assets/images/kids_cloth/27.jpg"]
-$.aPV=["assets/assets/images/means_jeans/1.png","assets/assets/images/means_jeans/2.png","assets/assets/images/means_jeans/3.png","assets/assets/images/means_jeans/4.png","assets/assets/images/means_jeans/5.png","assets/assets/images/means_jeans/6.png","assets/assets/images/means_jeans/7.png","assets/assets/images/means_jeans/8.png","assets/assets/images/means_jeans/9.png","assets/assets/images/means_jeans/10.png","assets/assets/images/means_jeans/11.png","assets/assets/images/means_jeans/12.png","assets/assets/images/means_jeans/13.png"]
+$.aPV=["assets/images/means_jeans/1.png","assets/images/means_jeans/2.png","assets/images/means_jeans/3.png","assets/images/means_jeans/4.png","assets/images/means_jeans/5.png","assets/images/means_jeans/6.png","assets/images/means_jeans/7.png","assets/images/means_jeans/8.png","assets/images/means_jeans/9.png","assets/images/means_jeans/10.png","assets/images/means_jeans/11.png","assets/images/means_jeans/12.png","assets/images/means_jeans/13.png"]
 $.b68=["assets/images/means_jeans/c1.jpeg","assets/images/means_jeans/c2.png","assets/images/means_jeans/c3.png","assets/images/means_jeans/c4.png","assets/images/means_jeans/c5.png","assets/images/means_jeans/c6.png","assets/images/means_jeans/c7.webp","assets/images/means_jeans/c8.jpg"]
 $.acI=function(){var s=t.N
 return[A.a4(["title","Quality And Price Control","description","We maintain strict control on prices, quality, and delivery schedule."],s,s),A.a4(["title","Experienced Team","description","We have a very strong team of merchandisers and quality control professionals to take care of buyers' each requirement."],s,s),A.a4(["title","Compliance and Certification","description","We have a strong network of vendors/factories that are compliant and certified/audited for social accountability."],s,s),A.a4(["title","Advanced CAD Systems","description","Our factories are equipped with the latest CAD systems to achieve perfection in patterns."],s,s),A.a4(["title","Exceptional Sampling and Design","description","We have an excellent sampling and pattern designing team to translate into reality the handwriting of global designers."],s,s),A.a4(["title","High Fashion and Intricate Value Additions","description","We specialize in high fashion, intricate designs, and value additions, be it in garments or accessories."],s,s),A.a4(["title","Wide Product Range","description","We offer an exhaustive range of products at reasonable pricing."],s,s),A.a4(["title","Expertise in Handwork and Beadwork","description","We have an unparalleled strength in hand work and beadwork."],s,s),A.a4(["title","Comprehensive Infrastructure","description","Our elaborate infrastructure helps us offer garments and home textile products with different kinds of washes and dyeing, vintage look range, and updates with the latest global trends."],s,s)]}()
