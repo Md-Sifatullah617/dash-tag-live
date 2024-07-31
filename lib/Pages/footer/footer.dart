@@ -20,7 +20,7 @@ class Footer extends StatelessWidget {
       width: Get.width,
       height: getValueForScreenType<double>(
         context: context,
-        mobile: 75.sh,
+        mobile: 700,
         tablet: 1000,
         desktop: 850,
       ),

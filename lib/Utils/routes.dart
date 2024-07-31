@@ -73,7 +73,7 @@ class AppRoutes {
     GetPage(name: contact, page: () => const ContactUsRoot()),
     GetPage(name: clients, page: () => const OurClientsRoot()),
     GetPage(name: services, page: () => const ServicesPageRoot()),
-    GetPage(name: profile, page: () => ProfilePage()),
+    GetPage(name: profile, page: () => const ProfilePage()),
     GetPage(name: accessoeies, page: () => ProductShowcasePage()),
     GetPage(name: leatherproduct, page: () => ProductShowcasePage()),
 

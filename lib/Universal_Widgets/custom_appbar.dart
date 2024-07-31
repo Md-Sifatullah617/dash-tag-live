@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pluto_menu_bar/pluto_menu_bar.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({
@@ -16,12 +17,12 @@ class CustomAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Shader textGradient = const LinearGradient(
-      colors: [
-        Color(0xFF8A2BE2), // BlueViolet
-        Color(0xFFFF69B4), // HotPink
-      ],
-    ).createShader(const Rect.fromLTWH(0.0, 0.0, 250.0, 60.0));
+    // final Shader textGradient = const LinearGradient(
+    //   colors: [
+    //     Color(0xFF8A2BE2), // BlueViolet
+    //     Color(0xFFFF69B4), // HotPink
+    //   ],
+    // ).createShader(const Rect.fromLTWH(0.0, 0.0, 250.0, 60.0));
     return Container(
       height: 60,
       padding: EdgeInsets.symmetric(
@@ -36,13 +37,19 @@ class CustomAppbar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          GestureDetector(
-            onTap: () {
-              Get.toNamed(AppRoutes.home);
-            },
-            child: Text(
-              HomePageText.webSiteName,
-              style: TextStyle(
+          Padding(
+            padding: const EdgeInsets.only(right: 5),
+            child: GestureDetector(
+              onTap: () {
+                Get.toNamed(AppRoutes.home);
+              },
+              child: GradientText(
+                HomePageText.webSiteName,
+                colors: const [
+                  Color(0xFF8A2BE2), // BlueViolet
+                  Color(0xFFFF69B4), // HotPink
+                ],
+                style: TextStyle(
                   fontSize: getValueForScreenType<double>(
                     context: context,
                     mobile: 20,
@@ -57,7 +64,8 @@ class CustomAppbar extends StatelessWidget {
                       offset: Offset(5.0, 5.0),
                     )
                   ],
-                  foreground: Paint()..shader = textGradient),
+                ),
+              ),
             ),
           ),
           getValueForScreenType<bool>(

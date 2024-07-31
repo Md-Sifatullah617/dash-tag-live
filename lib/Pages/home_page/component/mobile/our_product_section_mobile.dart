@@ -25,7 +25,6 @@ class OurProductSectionMobile extends StatelessWidget {
           SizedBox(
             height: 5.sh,
           ),
-
           Card(
             elevation: 10,
             child: Column(
@@ -44,15 +43,16 @@ class OurProductSectionMobile extends StatelessWidget {
                     color: Colors.white,
                     border: Border(
                         top: BorderSide(
-                          width: 2,
-                          color: Colors.black,
-                        )
-                    ),
+                      width: 2,
+                      color: Colors.black,
+                    )),
                   ),
                   child: CarouselSlider(
                       items: AllListsManager.mensJeansList
                           .map((e) => Image.asset(e,
-                              width: Get.width, height: 60.sh, fit: BoxFit.cover))
+                              width: Get.width,
+                              height: 60.sh,
+                              fit: BoxFit.fill))
                           .toList(),
                       options: CarouselOptions(
                         aspectRatio: 0.8,
@@ -72,7 +72,6 @@ class OurProductSectionMobile extends StatelessWidget {
             ),
           ),
           SizedBox(height: 5.sh),
-
           Card(
             elevation: 10,
             child: Column(
@@ -91,15 +90,16 @@ class OurProductSectionMobile extends StatelessWidget {
                     color: Colors.white,
                     border: Border(
                         top: BorderSide(
-                          width: 2,
-                          color: Colors.black,
-                        )
-                    ),
+                      width: 2,
+                      color: Colors.black,
+                    )),
                   ),
                   child: CarouselSlider(
-                      items: AllListsManager.mensJeansList
+                      items: AllListsManager.womensClothList
                           .map((e) => Image.asset(e,
-                              width: Get.width, height: 60.sh, fit: BoxFit.cover))
+                              width: Get.width,
+                              height: 60.sh,
+                              fit: BoxFit.fill))
                           .toList(),
                       options: CarouselOptions(
                         aspectRatio: 0.8,
@@ -119,7 +119,6 @@ class OurProductSectionMobile extends StatelessWidget {
             ),
           ),
           SizedBox(height: 5.sh),
-
           Card(
             elevation: 10,
             child: Column(
@@ -138,16 +137,15 @@ class OurProductSectionMobile extends StatelessWidget {
                     color: Colors.white,
                     border: Border(
                         top: BorderSide(
-                          width: 2,
-                          color: Colors.black,
-                        )
-                    ),
+                      width: 2,
+                      color: Colors.black,
+                    )),
                   ),
                   child: CarouselSlider(
-                      items: AllListsManager.mensJeansList
+                      items: AllListsManager.kidsClothList
                           .map((e) => Image.asset(
                                 e,
-                                fit: BoxFit.cover,
+                                fit: BoxFit.fill,
                                 width: Get.width,
                                 height: 60.sh,
                               ))
