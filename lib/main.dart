@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
           appBarTheme: const AppBarTheme(
             backgroundColor: ColorManager.webBackgroundColor,
           ),
-          fontFamily: GoogleFonts.poppins().fontFamily,
+          fontFamily: GoogleFonts.rajdhani().fontFamily,
         ),
         scrollBehavior: const MaterialScrollBehavior().copyWith(
           dragDevices: {
@@ -46,6 +46,7 @@ class MyApp extends StatelessWidget {
         }),
         getPages: AppRoutes.pages,
         initialRoute: AppRoutes.home,
+        defaultTransition: Transition.leftToRightWithFade,
       ),
     );
   }

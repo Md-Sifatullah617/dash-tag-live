@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_appbar.dart';
 import 'package:dash_and_tag_web_site/Universal_Widgets/custom_drawer.dart';
 import 'package:dash_and_tag_web_site/controller/main_controller.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,7 @@ class ContactUsPageMobile extends StatelessWidget {
       drawer: CustomDrawer(controller: controller),
       body: ListView(
         children: [
+          CustomAppbar(controller: controller),
           ProductsPageHeaderImage(
             title: "Contact Us",
             fontSize: 10.sw,

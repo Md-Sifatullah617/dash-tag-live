@@ -1,5 +1,6 @@
+import 'package:dash_and_tag_web_site/Utils/routes.dart';
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
 
 class FooterSiteMap extends StatelessWidget {
   const FooterSiteMap({
@@ -12,7 +13,6 @@ class FooterSiteMap extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-
           const Text(
             'Site Map',
             style: TextStyle(
@@ -37,9 +37,11 @@ class FooterSiteMap extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed(AppRoutes.profile);
+            },
             child: const Text(
-              'Pages',
+              'Profile',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
@@ -51,9 +53,11 @@ class FooterSiteMap extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed(AppRoutes.services);
+            },
             child: const Text(
-              'Projects',
+              'Services',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
@@ -65,9 +69,11 @@ class FooterSiteMap extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed(AppRoutes.clients);
+            },
             child: const Text(
-              'Shop',
+              'Our Client',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,

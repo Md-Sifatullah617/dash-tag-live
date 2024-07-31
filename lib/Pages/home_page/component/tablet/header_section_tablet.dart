@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import '../../../../Utils/All_Lists/all_lists.dart';
 import '../../../../controller/main_controller.dart';
 
-
 class HeaderSectionTablet extends StatelessWidget {
   HeaderSectionTablet({super.key});
 
@@ -19,11 +18,11 @@ class HeaderSectionTablet extends StatelessWidget {
           width: double.infinity,
           child: CarouselSlider(
             items: AllListsManager.mainSliderImageList
-                .map((e) => Image.network(
-              e,
-              fit: BoxFit.cover,
-              width: double.infinity,
-            ))
+                .map((e) => Image.asset(
+                      e,
+                      fit: BoxFit.fill,
+                      width: double.infinity,
+                    ))
                 .toList(),
             options: CarouselOptions(
               height: 300,

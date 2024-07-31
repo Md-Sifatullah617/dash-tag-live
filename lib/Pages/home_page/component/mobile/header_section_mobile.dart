@@ -18,11 +18,11 @@ class HeaderSectionMobile extends StatelessWidget {
           width: double.infinity,
           child: CarouselSlider(
             items: AllListsManager.mainSliderImageList
-                .map((e) => Image.network(
-              e,
-              fit: BoxFit.cover,
-              width: double.infinity,
-            ))
+                .map((e) => Image.asset(
+                      e,
+                      fit: BoxFit.cover,
+                      width: double.infinity,
+                    ))
                 .toList(),
             options: CarouselOptions(
               height: 200,

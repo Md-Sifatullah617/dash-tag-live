@@ -42,10 +42,12 @@ dependencies:
   pluto_menu_bar: ^3.0.1
   responsive_builder: ^0.7.0
   simple_gradient_text: ^1.2.3
-  pdfx: ^2.6.0
+  # pdfx: ^2.6.0
   universal_html: ^2.2.4
   url_launcher: ^6.3.0
   firebase_core: ^3.1.1
+  syncfusion_flutter_pdfviewer: ^26.2.5
+  http: ^1.2.2
 
 dev_dependencies:
   flutter_lints: ^4.0.0
@@ -79,13 +81,11 @@ flutter:
     - assets/images/products/Girls/Hoodies/
     - assets/images/products/Girls/Jens/
     - assets/images/products/Girls/T-Shirts/
-    - assets/images/products/Girls/shirt_and_pant/
     - assets/images/products/Girls/short_and_cargo/
     - assets/images/products/Girls/Sweaters/
     - assets/images/products/Girls/Polo Shirts/
     - assets/images/products/leather_products/
     - assets/images/products/men/Hoodies/
-    - assets/images/products/men/Jackets/
     - assets/images/products/men/jens/
     - assets/images/products/men/T-Shirts/
     - assets/images/products/men/Polo Shirts/
@@ -116,13 +116,13 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: Caveat
-      fonts:
-        - asset: fonts/Caveat-VariableFont_wght.ttf
+  # fonts:
+  #   - family: Caveat
+  #     fonts:
+  #       - asset: fonts/Caveat-VariableFont_wght.ttf
 
-    - family: Rajdhani
-      fonts:
-        - asset: fonts/Rajdhani-Bold.ttf
+  #   - family: Rajdhani
+  #     fonts:
+  #       - asset: fonts/Rajdhani-Bold.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

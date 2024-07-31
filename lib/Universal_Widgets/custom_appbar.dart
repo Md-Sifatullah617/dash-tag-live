@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pluto_menu_bar/pluto_menu_bar.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({
@@ -17,6 +16,12 @@ class CustomAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Shader textGradient = const LinearGradient(
+      colors: [
+        Color(0xFF8A2BE2), // BlueViolet
+        Color(0xFFFF69B4), // HotPink
+      ],
+    ).createShader(const Rect.fromLTWH(0.0, 0.0, 250.0, 60.0));
     return Container(
       height: 60,
       padding: EdgeInsets.symmetric(
@@ -31,31 +36,18 @@ class CustomAppbar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // GradientText(
-          //   HomePageText.webSiteName,
-          //   style: const TextStyle(
-          //     fontSize: 30,
-          //     fontWeight: FontWeight.bold,
-          //   ),
-          //   gradientType: GradientType.linear,
-          //   colors: const [
-          //     Color(0xFF00BFFF), // DeepSkyBlue
-          //     Color(0xFF00FFFF), // Aqua
-          //   ],
-          //
-          // ),
           GestureDetector(
             onTap: () {
               Get.toNamed(AppRoutes.home);
             },
-            child: GradientText(
+            child: Text(
               HomePageText.webSiteName,
               style: TextStyle(
                   fontSize: getValueForScreenType<double>(
                     context: context,
                     mobile: 20,
                     tablet: 20,
-                    desktop: 30,
+                    desktop: 28,
                   ),
                   fontWeight: FontWeight.bold,
                   shadows: const [
@@ -64,12 +56,8 @@ class CustomAppbar extends StatelessWidget {
                       color: Colors.black38,
                       offset: Offset(5.0, 5.0),
                     )
-                  ]),
-              gradientType: GradientType.linear,
-              colors: const [
-                Color(0xFF8A2BE2), // BlueViolet
-                Color(0xFFFF69B4), // HotPink
-              ],
+                  ],
+                  foreground: Paint()..shader = textGradient),
             ),
           ),
           getValueForScreenType<bool>(
@@ -95,8 +83,8 @@ class CustomAppbar extends StatelessWidget {
                         width: getValueForScreenType<double>(
                           context: context,
                           mobile: 0,
-                          tablet: 362,
-                          desktop: 552,
+                          tablet: 375,
+                          desktop: 560,
                         ),
                         child: PlutoMenuBar(
                           mode: PlutoMenuBarMode.hover,

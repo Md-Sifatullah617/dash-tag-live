@@ -1,4 +1,6 @@
+import 'package:dash_and_tag_web_site/Utils/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class FooterCompany extends StatelessWidget {
   const FooterCompany({
@@ -21,9 +23,11 @@ class FooterCompany extends StatelessWidget {
           ),
           const SizedBox(height: 18),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed(AppRoutes.aboutResources);
+            },
             child: const Text(
-              'About',
+              'About Us',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
@@ -35,9 +39,11 @@ class FooterCompany extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed(AppRoutes.missionVision);
+            },
             child: const Text(
-              'Blog',
+              'Mission & Vision',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
@@ -49,23 +55,11 @@ class FooterCompany extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed(AppRoutes.contact);
+            },
             child: const Text(
-              'Gallery',
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.w600,
-                fontSize: 14,
-                height: 1.5,
-                letterSpacing: 0.5,
-              ),
-            ),
-          ),
-          const SizedBox(height: 10),
-          TextButton(
-            onPressed: () {},
-            child: const Text(
-              'Careere',
+              'Contact',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,

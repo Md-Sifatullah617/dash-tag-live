@@ -15,7 +15,7 @@ class HeaderSection extends StatelessWidget {
       children: [
         CarouselSlider(
           items: AllListsManager.mainSliderImageList
-              .map((e) => Image.network(
+              .map((e) => Image.asset(
                     e,
                     fit: BoxFit.cover,
                     width: Get.width,
