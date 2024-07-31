@@ -54633,7 +54633,7 @@ A.c7(r).toString
 r=$.cc().d
 if(r==null){r=self.window.devicePixelRatio
 if(r===0)r=1}r=s.cj(0,r)
-s=A.c8(a,850,0.75*$.a_.B(),1000)
+s=A.c8(a,850,700,1000)
 q=0.05*$.a6.B()
 p=A.c8(a,0,20,10)
 if(A.c8(a,!1,!0,!1))o=A.aM(A.b([B.n1,A.Q(n,A.c8(a,0,10,0),n),B.YM,A.Q(n,A.c8(a,0,40,0),n),A.aQ4(),B.Ha],t.p),B.m,n,B.kb,B.i)
